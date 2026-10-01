@@ -1,0 +1,2 @@
+# Cosmetics_Hair_Care_Insights_Trend_Monitor
+Automated website repository for Cosmetics_Hair_Care_Insights_Trend_Monitor
