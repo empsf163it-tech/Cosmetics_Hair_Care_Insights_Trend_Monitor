@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservation & Client Portal — Élixir Dermatologie</title>
+  <meta name="description" content="Book a private diagnostic consultation or access your confidential patient dossier.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header-gallery">
+    <div class="container header-inner">
+      <button class="menu-trigger" aria-label="Open Navigation Menu">
+        <div class="menu-icon">
+          <span></span>
+          <span></span>
+        </div>
+        <span>Menu</span>
+      </button>
+
+      <div class="brand-logo">
+        <a href="index.html">Élixir Dermatologie</a>
+        <span>Reservation & Portal</span>
+      </div>
+
+      <nav class="nav-links-desktop">
+        <a href="index.html">Home</a>
+        <a href="treatments.html">Treatments</a>
+        <a href="results.html">Results</a>
+        <a href="specialists.html">Specialists</a>
+      </nav>
+
+      <a href="contact.html" class="header-cta active">Book Consultation</a>
+    </div>
+  </header>
+
+  <!-- Overlay -->
+  <div class="gallery-overlay" id="menuOverlay">
+    <div class="container">
+      <div class="overlay-header">
+        <div class="brand-logo" style="text-align: left;">
+          <a href="index.html" style="color: #fff; font-family: var(--font-script);">Élixir Dermatologie</a>
+        </div>
+        <button class="close-trigger" aria-label="Close Menu">
+          <span>Close</span> ✕
+        </button>
+      </div>
+
+      <div class="overlay-body">
+        <nav class="overlay-nav">
+          <a href="index.html"><span class="num">01</span> Home Gallery</a>
+          <a href="treatments.html"><span class="num">02</span> Treatments Collection</a>
+          <a href="results.html"><span class="num">03</span> Results Archive</a>
+          <a href="specialists.html"><span class="num">04</span> Clinical Specialists</a>
+          <a href="contact.html" class="active"><span class="num">05</span> Book Consultation & Portal</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-wrapper">
+    <section class="section-padding-sm border-bottom">
+      <div class="container" style="text-align: center; max-width: 800px;">
+        <span class="eyebrow">Private Reservation & Client Portal</span>
+        <h1>Begin Your <span class="script">Skincare Journey</span></h1>
+        <p class="lead">Schedule a private diagnostic consultation or access your confidential patient skin dossier below.</p>
+
+        <!-- Navigation Tabs -->
+        <div class="filter-bar" style="margin-top: 35px; margin-bottom: 0;">
+          <button class="filter-btn active" id="tabBookBtn" onclick="showTab('book')">Reserve Consultation</button>
+          <button class="filter-btn" id="tabPortalBtn" onclick="showTab('portal')">Patient Dossier Sign-In</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding">
+      <div class="container">
+        <!-- View 1: Reservation Form -->
+        <div id="viewBook" style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 70px;">
+          <div>
+            <form id="consultationForm" onsubmit="event.preventDefault(); document.getElementById('formSuccess').style.display='block'; this.reset();">
+              <div id="formSuccess" style="display: none; padding: 20px; background-color: var(--bg-secondary); border: 1px solid var(--accent); margin-bottom: 30px;">
+                <span class="eyebrow" style="margin-bottom: 4px;">REQUEST RECEIVED</span>
+                <h4 style="font-family: var(--font-serif); font-size: 1.3rem;">Thank you. Your dossier request has been logged.</h4>
+                <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 6px;">Our Paris/New York clinical concierge will contact you shortly to finalize your appointment time.</p>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">First Name *</label>
+                  <input type="text" id="firstName" class="form-control" placeholder="Eleanor" required>
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name *</label>
+                  <input type="text" id="lastName" class="form-control" placeholder="Vane" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email Address *</label>
+                  <input type="email" id="email" class="form-control" placeholder="eleanor@domain.com" required>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number *</label>
+                  <input type="tel" id="phone" class="form-control" placeholder="+33 1 42 68 50 00" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="location">Preferred Atelier *</label>
+                  <select id="location" class="form-control" required>
+                    <option value="paris">Paris — Rue du Faubourg Saint-Honoré</option>
+                    <option value="geneva">Geneva — Rue du Rhône</option>
+                    <option value="ny">New York — Madison Avenue</option>
+                    <option value="virtual">Virtual Video Diagnostic</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="concern">Primary Skin Concern *</label>
+                  <select id="concern" class="form-control" required>
+                    <option value="pigment">Picosecond Melanin / Hyperpigmentation</option>
+                    <option value="laxity">RF Micro-Needling Collagen Restructure</option>
+                    <option value="polynucleotides">Polynucleotide Regeneration</option>
+                    <option value="vascular">Vascular Redness & Rosacea</option>
+                    <option value="general">Comprehensive Dermatological Assessment</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="specialist">Preferred Specialist</label>
+                <select id="specialist" class="form-control">
+                  <option value="any">First Available Lead Specialist</option>
+                  <option value="vance">Dr. Hélène Vance, MD (Chief Dermatologist)</option>
+                  <option value="mercer">Dr. Julian Mercer, MD, PhD (Regenerative)</option>
+                  <option value="laurent">Dr. Camille Laurent, MD (Vascular Laser)</option>
+                </select>
+              </div>
+
+              <button type="submit" class="btn-gallery btn-accent" style="width: 100%; justify-content: center; margin-top: 10px;">Submit Consultation Request →</button>
+            </form>
+          </div>
+
+          <div>
+            <div style="background-color: var(--bg-card); border: 1px solid var(--border-color); padding: 35px; box-shadow: var(--shadow-subtle);">
+              <span class="eyebrow">Atelier Contact</span>
+              <h3 style="margin-bottom: 24px;">Global Concierge</h3>
+
+              <div style="margin-bottom: 24px;">
+                <span style="display: block; font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin-bottom: 4px;">PARIS ATELIER</span>
+                <p style="font-size: 0.95rem; color: var(--text-main); margin: 0;">18 Rue du Faubourg Saint-Honoré, 75008 Paris<br>T: +33 1 42 68 50 00</p>
+              </div>
+
+              <div style="margin-bottom: 24px;">
+                <span style="display: block; font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin-bottom: 4px;">NEW YORK CLINIC</span>
+                <p style="font-size: 0.95rem; color: var(--text-main); margin: 0;">645 Madison Avenue, 14th Fl, NY 10022<br>T: +1 212 555 0198</p>
+              </div>
+
+              <div style="margin-bottom: 24px;">
+                <span style="display: block; font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin-bottom: 4px;">EMAIL CONCIERGE</span>
+                <p style="font-size: 0.95rem; color: var(--text-main); margin: 0;">concierge@elixirdermatologie.com</p>
+              </div>
+
+              <div style="padding-top: 20px; border-top: 1px solid var(--border-color); font-size: 0.85rem; color: var(--text-muted);">
+                Private underground valet parking available at Paris and New York clinic entrances.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- View 2: Patient Portal / Dossier Sign In -->
+        <div id="viewPortal" style="display: none; max-width: 600px; margin: 0 auto;">
+          <div style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 40px; box-shadow: var(--shadow-subtle);">
+            <div style="text-align: center; margin-bottom: 30px;">
+              <span class="eyebrow">CONFIDENTIAL ACCESS</span>
+              <h2>Patient Dossier Sign-In</h2>
+              <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 6px;">Sign in to view upcoming consultation dates, 3D Visia diagnostic skin maps, and specialist care plans.</p>
+            </div>
+
+            <form onsubmit="event.preventDefault(); document.getElementById('portalSuccess').style.display='block';">
+              <div id="portalSuccess" style="display: none; padding: 20px; background-color: var(--bg-secondary); border: 1px solid var(--accent); margin-bottom: 24px;">
+                <span class="eyebrow" style="margin-bottom: 4px;">DOSSIER VERIFIED</span>
+                <h4 style="font-family: var(--font-serif); font-size: 1.2rem;">Welcome back, Eleanor Vane.</h4>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 4px;">Next Session: Oct 18, 2026 at Paris Atelier (Picosecond Laser #2).</p>
+              </div>
+
+              <div class="form-group">
+                <label for="portalEmail">Patient Email</label>
+                <input type="email" id="portalEmail" class="form-control" value="eleanor.vane@dermatology.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="portalPassword">Confidential Password</label>
+                <input type="password" id="portalPassword" class="form-control" value="password123" required>
+              </div>
+
+              <button type="submit" class="btn-gallery btn-accent" style="width: 100%; justify-content: center;">Access My Skin Dossier →</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer-editorial">
+    <div class="container">
+      <div class="footer-bottom" style="border: none; padding-top: 0;">
+        <div>© <span data-year>2026</span> Élixir Dermatologie. All rights reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="index.html">Home</a>
+          <a href="treatments.html">Treatments</a>
+          <a href="results.html">Results</a>
+          <a href="specialists.html">Specialists</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    function showTab(type) {
+      const bookBtn = document.getElementById('tabBookBtn');
+      const portalBtn = document.getElementById('tabPortalBtn');
+      const viewBook = document.getElementById('viewBook');
+      const viewPortal = document.getElementById('viewPortal');
+
+      if (type === 'book') {
+        bookBtn.classList.add('active');
+        portalBtn.classList.remove('active');
+        viewBook.style.display = 'grid';
+        viewPortal.style.display = 'none';
+      } else {
+        portalBtn.classList.add('active');
+        bookBtn.classList.remove('active');
+        viewBook.style.display = 'none';
+        viewPortal.style.display = 'block';
+      }
+    }
+  </script>
+</body>
+</html>

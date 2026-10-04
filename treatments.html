@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treatments Collection — Élixir Dermatologie</title>
+  <meta name="description" content="Explore our complete collection of medical dermatological treatments, laser photo-rejuvenation, cellular therapies, and clinical peels.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header-gallery">
+    <div class="container header-inner">
+      <button class="menu-trigger" aria-label="Open Navigation Menu">
+        <div class="menu-icon">
+          <span></span>
+          <span></span>
+        </div>
+        <span>Menu</span>
+      </button>
+
+      <div class="brand-logo">
+        <a href="index.html">Élixir Dermatologie</a>
+        <span>Treatments Collection</span>
+      </div>
+
+      <nav class="nav-links-desktop">
+        <a href="index.html">Home</a>
+        <a href="treatments.html" class="active">Treatments</a>
+        <a href="results.html">Results</a>
+        <a href="specialists.html">Specialists</a>
+      </nav>
+
+      <a href="contact.html" class="header-cta">Book Consultation</a>
+    </div>
+  </header>
+
+  <!-- Navigation Overlay -->
+  <div class="gallery-overlay" id="menuOverlay">
+    <div class="container">
+      <div class="overlay-header">
+        <div class="brand-logo" style="text-align: left;">
+          <a href="index.html" style="color: #fff; font-family: var(--font-script);">Élixir Dermatologie</a>
+        </div>
+        <button class="close-trigger" aria-label="Close Menu">
+          <span>Close</span> ✕
+        </button>
+      </div>
+
+      <div class="overlay-body">
+        <nav class="overlay-nav">
+          <a href="index.html"><span class="num">01</span> Home Gallery</a>
+          <a href="treatments.html" class="active"><span class="num">02</span> Treatments Collection</a>
+          <a href="results.html"><span class="num">03</span> Results Archive</a>
+          <a href="specialists.html"><span class="num">04</span> Clinical Specialists</a>
+          <a href="contact.html"><span class="num">05</span> Book Consultation & Portal</a>
+        </nav>
+
+        <div class="overlay-info">
+          <div>
+            <h4>Private Skincare Archive</h4>
+            <p>Every treatment protocol in our gallery is administered under strict dermatological supervision using FDA-cleared and CE-certified clinical technologies.</p>
+          </div>
+          <div>
+            <a href="contact.html" class="btn-gallery btn-dark" style="width: 100%; justify-content: center;">Book Consultation</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Protocol Explorer Modal -->
+  <div class="modal-wrapper" id="protocolModal">
+    <div class="modal-content-box">
+      <button class="modal-close-btn" onclick="document.getElementById('protocolModal').classList.remove('active')">✕</button>
+      <div class="treatment-meta-badge">
+        <span id="modalCode">TRT-01</span> • <span id="modalCategory">Laser Technology</span>
+      </div>
+      <h2 id="modalTitle" style="margin-bottom: 16px;">Picosecond Melanin Erasure</h2>
+      <p class="lead" id="modalLead" style="margin-bottom: 30px;">Ultra-short acoustic pressure waves break down stubborn epidermal pigment and melasma with zero thermal damage to surrounding tissue.</p>
+
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; background: var(--bg-secondary); padding: 20px; margin-bottom: 30px; border: 1px solid var(--border-color);">
+        <div>
+          <span style="font-size: 0.7rem; color: var(--accent); text-transform: uppercase;">DOWNTIME</span>
+          <strong id="modalDowntime" style="display: block; font-family: var(--font-serif); font-size: 1.1rem;">6 — 12 Hours</strong>
+        </div>
+        <div>
+          <span style="font-size: 0.7rem; color: var(--accent); text-transform: uppercase;">SESSIONS</span>
+          <strong id="modalSessions" style="display: block; font-family: var(--font-serif); font-size: 1.1rem;">3 Recommended</strong>
+        </div>
+        <div>
+          <span style="font-size: 0.7rem; color: var(--accent); text-transform: uppercase;">ANESTHESIA</span>
+          <strong style="display: block; font-family: var(--font-serif); font-size: 1.1rem;">Topical Gel</strong>
+        </div>
+      </div>
+
+      <h4 style="margin-bottom: 12px; font-size: 1.1rem;">Clinical Process</h4>
+      <div class="timeline" style="margin-top: 10px;">
+        <div class="timeline-step">
+          <h4>1. 3D Visia Diagnostic Scan</h4>
+          <p>Multispectral UV photography mapping deep dermal pigment and capillary vascularity.</p>
+        </div>
+        <div class="timeline-step">
+          <h4>2. Targeted Laser Delivery</h4>
+          <p>Precise picosecond acoustic pulses delivered across target facial zones.</p>
+        </div>
+        <div class="timeline-step">
+          <h4>3. Bio-Active Lipid Barrier Shield</h4>
+          <p>Post-treatment infusion of biomimetic lipid cream and chilled sapphire cooling.</p>
+        </div>
+      </div>
+
+      <div style="margin-top: 30px; display: flex; gap: 20px; align-items: center;">
+        <a href="contact.html" class="btn-gallery btn-accent" style="width: 100%; justify-content: center;">Reserve This Protocol →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-wrapper">
+    <!-- Page Header -->
+    <section class="section-padding-sm border-bottom">
+      <div class="container" style="text-align: center; max-width: 800px;">
+        <span class="eyebrow">Clinical Dossier</span>
+        <h1>Treatment Collection & <span class="script">Skincare Archive</span></h1>
+        <p class="lead">A curated archive of medical dermatological procedures categorized by target skin layer, cellular mechanism, and recovery timeline.</p>
+      </div>
+    </section>
+
+    <!-- Filterable Archive Grid -->
+    <section class="section-padding">
+      <div class="container">
+        <!-- Category Filter -->
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">All Treatments</button>
+          <button class="filter-btn" data-filter="laser">Laser & Phototherapy</button>
+          <button class="filter-btn" data-filter="injectables">Injectable Aesthetics</button>
+          <button class="filter-btn" data-filter="peels">Clinical Matrix Peels</button>
+          <button class="filter-btn" data-filter="regenerative">Regenerative Therapy</button>
+        </div>
+
+        <!-- Treatment Grid -->
+        <div class="gallery-grid">
+          <!-- Card 1 -->
+          <div class="gallery-card" data-category="laser">
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=800&q=85" alt="Picosecond Laser Pigment Erasure">
+              <span class="card-category">Laser</span>
+            </div>
+            <div class="card-content">
+              <div class="card-code">TRT-01</div>
+              <h3>Picosecond Melanin Erasure</h3>
+              <p>Ultra-short acoustic pressure waves break down stubborn epidermal pigment and melasma with zero thermal damage to surrounding tissue.</p>
+              <div class="card-footer">
+                <span>Downtime: 6–12 Hours</span>
+                <button class="link-arrow open-protocol" data-title="Picosecond Melanin Erasure" data-code="TRT-01" data-cat="Laser Technology" data-downtime="6–12 Hours" data-sessions="3 Recommended (30-day intervals)" data-lead="Ultra-short acoustic pressure waves break down stubborn epidermal pigment and melasma with zero thermal damage to surrounding tissue." style="background:none; border:none; cursor:pointer;">Explore Protocol →</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="gallery-card" data-category="regenerative">
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1512290900673-7002ddb9338b?auto=format&fit=crop&w=800&q=85" alt="Fractional Radiofrequency Micro-Needling">
+              <span class="card-category">Regenerative</span>
+            </div>
+            <div class="card-content">
+              <div class="card-code">TRT-02</div>
+              <h3>Fractional RF Collagen Matrix</h3>
+              <p>Gold-plated micro-needles deliver controlled bipolar radiofrequency directly into the deep dermis to tighten laxity and smooth acne scarring.</p>
+              <div class="card-footer">
+                <span>Downtime: 24–48 Hours</span>
+                <button class="link-arrow open-protocol" data-title="Fractional RF Collagen Matrix" data-code="TRT-02" data-cat="Regenerative Therapy" data-downtime="24–48 Hours" data-sessions="2–4 Sessions" data-lead="Gold-plated micro-needles deliver controlled bipolar radiofrequency directly into the deep dermis to tighten laxity and smooth acne scarring." style="background:none; border:none; cursor:pointer;">Explore Protocol →</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="gallery-card" data-category="injectables">
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=85" alt="Polynucleotide Cellular Biostimulation">
+              <span class="card-category">Injectable</span>
+            </div>
+            <div class="card-content">
+              <div class="card-code">TRT-03</div>
+              <h3>Polynucleotide Biostimulation</h3>
+              <p>Salmon-derived DNA fragments injected intradermally to trigger fibroblast activation, hydration retention, and micro-vascular circulation.</p>
+              <div class="card-footer">
+                <span>Downtime: 12 Hours</span>
+                <button class="link-arrow open-protocol" data-title="Polynucleotide Biostimulation" data-code="TRT-03" data-cat="Injectable Aesthetics" data-downtime="12 Hours" data-sessions="3 Sessions" data-lead="Salmon-derived DNA fragments injected intradermally to trigger fibroblast activation, hydration retention, and micro-vascular circulation." style="background:none; border:none; cursor:pointer;">Explore Protocol →</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="gallery-card" data-category="peels">
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=85" alt="Bio-Repeel TCA Resurfacing">
+              <span class="card-category">Peels</span>
+            </div>
+            <div class="card-content">
+              <div class="card-code">TRT-04</div>
+              <h3>Biphasic TCA Matrix Peel</h3>
+              <p>35% Trichloroacetic acid infused with amino acids and vitamins for deep epidermal exfoliation without visible shedding or social downtime.</p>
+              <div class="card-footer">
+                <span>Downtime: Zero</span>
+                <button class="link-arrow open-protocol" data-title="Biphasic TCA Matrix Peel" data-code="TRT-04" data-cat="Clinical Matrix Peels" data-downtime="Zero Downtime" data-sessions="4 Sessions" data-lead="35% Trichloroacetic acid infused with amino acids and vitamins for deep epidermal exfoliation without visible shedding or social downtime." style="background:none; border:none; cursor:pointer;">Explore Protocol →</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="gallery-card" data-category="injectables">
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=85" alt="Hyaluronic Structural Contouring">
+              <span class="card-category">Injectable</span>
+            </div>
+            <div class="card-content">
+              <div class="card-code">TRT-05</div>
+              <h3>High-Viscosity Dermal Sculpting</h3>
+              <p>Micro-cannula administration of cross-linked hyaluronic gels to restore deep facial support structures in the zygomatic and malar regions.</p>
+              <div class="card-footer">
+                <span>Downtime: Minimal</span>
+                <button class="link-arrow open-protocol" data-title="High-Viscosity Dermal Sculpting" data-code="TRT-05" data-cat="Injectable Aesthetics" data-downtime="Minimal 24h" data-sessions="1 Session" data-lead="Micro-cannula administration of cross-linked hyaluronic gels to restore deep facial support structures in the zygomatic and malar regions." style="background:none; border:none; cursor:pointer;">Explore Protocol →</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="gallery-card" data-category="laser">
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1519415943484-9fa1873496d4?auto=format&fit=crop&w=800&q=85" alt="Vascular Nd:YAG Laser">
+              <span class="card-category">Laser</span>
+            </div>
+            <div class="card-content">
+              <div class="card-code">TRT-06</div>
+              <h3>Vascular Nd:YAG Target Therapy</h3>
+              <p>1064nm long-pulse laser targeting dilated capillaries, rosacea redness, and spider veins with localized sapphire contact cooling.</p>
+              <div class="card-footer">
+                <span>Downtime: 24 Hours</span>
+                <button class="link-arrow open-protocol" data-title="Vascular Nd:YAG Target Therapy" data-code="TRT-06" data-cat="Laser Technology" data-downtime="24 Hours" data-sessions="2 Sessions" data-lead="1064nm long-pulse laser targeting dilated capillaries, rosacea redness, and spider veins with localized sapphire contact cooling." style="background:none; border:none; cursor:pointer;">Explore Protocol →</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Consultation Banner -->
+    <section class="section-padding bg-secondary border-top">
+      <div class="container" style="text-align: center; max-width: 700px;">
+        <span class="eyebrow">Personalized Diagnosis</span>
+        <h2>Unsure which treatment fits your <span class="script">skin architecture</span>?</h2>
+        <p class="lead" style="margin-bottom: 30px;">Our medical team performs multispectral skin imaging during your initial consultation to determine your exact protocol.</p>
+        <a href="contact.html" class="btn-gallery btn-accent">Reserve Diagnostic Consultation</a>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer-editorial">
+    <div class="container">
+      <div class="footer-bottom" style="border: none; padding-top: 0;">
+        <div>© <span data-year>2026</span> Élixir Dermatologie. All rights reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="index.html">Home</a>
+          <a href="results.html">Results</a>
+          <a href="specialists.html">Specialists</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
