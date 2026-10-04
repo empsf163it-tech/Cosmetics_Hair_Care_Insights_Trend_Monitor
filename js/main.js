@@ -114,13 +114,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (!beforeImage || !handle) return;
 
-    const updateContainerWidth = () => {
+    const updateSliderWidth = () => {
       const rect = container.getBoundingClientRect();
-      container.style.setProperty('--ba-width', `${rect.width}px`);
+      const width = rect.width;
+      if (width > 0) {
+        container.style.setProperty('--ba-width', `${width}px`);
+        const beforeImg = beforeImage.querySelector('img');
+        if (beforeImg) {
+          beforeImg.style.width = `${width}px`;
+          beforeImg.style.minWidth = `${width}px`;
+          beforeImg.style.maxWidth = `${width}px`;
+        }
+      }
     };
 
-    updateContainerWidth();
-    window.addEventListener('resize', updateContainerWidth);
+    updateSliderWidth();
+    window.addEventListener('resize', updateSliderWidth);
+
+    container.querySelectorAll('img').forEach(img => {
+      if (img.complete) {
+        updateSliderWidth();
+      } else {
+        img.addEventListener('load', updateSliderWidth);
+      }
+    });
 
     let isDragging = false;
 
@@ -158,11 +175,13 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('mouseup', stopDrag);
     window.addEventListener('mousemove', onDrag);
 
-    handle.addEventListener('touchstart', startDrag);
+    handle.addEventListener('touchstart', startDrag, { passive: true });
     container.addEventListener('touchstart', (e) => {
-      moveSlider(e.touches[0].clientX);
+      if (e.touches && e.touches[0]) {
+        moveSlider(e.touches[0].clientX);
+      }
       startDrag(e);
-    });
+    }, { passive: true });
     window.addEventListener('touchend', stopDrag);
     window.addEventListener('touchmove', onDrag);
   });

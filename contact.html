@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reserve Consultation — Élixir Dermatologie</title>
   <meta name="description" content="Book a private diagnostic consultation with our medical dermatologists in Paris, Geneva, or New York.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -22,7 +23,6 @@
 
       <div class="brand-logo">
         <a href="index.html">Élixir Dermatologie</a>
-        <span>Consultation Request</span>
       </div>
 
       <nav class="nav-links-desktop">
@@ -52,27 +52,27 @@
 
       <div class="overlay-body">
         <nav class="overlay-nav">
-          <a href="index.html"><span class="num">01</span> Home Gallery</a>
-          <a href="treatments.html"><span class="num">02</span> Treatments Collection</a>
-          <a href="results.html"><span class="num">03</span> Results Archive</a>
-          <a href="specialists.html"><span class="num">04</span> Clinical Specialists</a>
-          <a href="trends.html"><span class="num">05</span> Editorial Journal</a>
-          <a href="contact.html" class="active"><span class="num">06</span> Book Consultation</a>
+          <a href="index.html"><span class="num">01</span> Home</a>
+          <a href="treatments.html"><span class="num">02</span> Treatments</a>
+          <a href="results.html"><span class="num">03</span> Results</a>
+          <a href="specialists.html"><span class="num">04</span> Specialists</a>
+          <a href="trends.html"><span class="num">05</span> Journal</a>
+          <a href="contact.html" class="active"><span class="num">06</span> Contact</a>
         </nav>
       </div>
     </div>
-  </header>
+  </div>
 
   <div class="page-wrapper">
     <section class="section-padding-sm border-bottom">
       <div class="container" style="text-align: center; max-width: 800px;">
-        <span class="eyebrow">Private Reservation</span>
+        <span class="eyebrow">PRIVATE CLINICAL RESERVATION</span>
         <h1>Begin Your <span class="script">Skincare Journey</span></h1>
-        <p class="lead">Please complete the minimal profile form below. Our medical concierge will review your skin concerns and confirm your appointment within 24 hours.</p>
+        <p class="lead">Complete the profile form below. Our medical concierge will review your skin concerns and confirm your private 3D Visia diagnostic consultation within 24 hours.</p>
       </div>
     </section>
 
-    <section class="section-padding">
+    <section class="section-padding border-bottom">
       <div class="container" style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 70px;">
         <!-- Consultation Form -->
         <div>
@@ -109,10 +109,10 @@
               <div class="form-group">
                 <label for="location">Preferred Atelier *</label>
                 <select id="location" class="form-control" required>
-                  <option value="paris">Paris — Rue du Faubourg Saint-Honoré</option>
-                  <option value="geneva">Geneva — Rue du Rhône</option>
-                  <option value="ny">New York — Madison Avenue</option>
-                  <option value="virtual">Virtual Video Diagnostic</option>
+                  <option value="paris">Paris — 18 Rue du Faubourg Saint-Honoré</option>
+                  <option value="geneva">Geneva — 42 Rue du Rhône</option>
+                  <option value="ny">New York — 645 Madison Avenue, 14th Fl</option>
+                  <option value="virtual">Virtual Video Tele-Diagnostic</option>
                 </select>
               </div>
               <div class="form-group">
@@ -129,12 +129,13 @@
 
             <div class="form-row">
               <div class="form-group">
-                <label for="specialist">Preferred Specialist</label>
+                <label for="specialist">Preferred Lead Specialist</label>
                 <select id="specialist" class="form-control">
-                  <option value="any">First Available Lead Specialist</option>
-                  <option value="vance">Dr. Hélène Vance, MD (Chief Dermatologist)</option>
-                  <option value="mercer">Dr. Julian Mercer, MD, PhD (Regenerative)</option>
-                  <option value="laurent">Dr. Camille Laurent, MD (Vascular Laser)</option>
+                  <option value="any">First Available Senior Specialist</option>
+                  <option value="vance">Dr. Hélène Vance, MD (Picosecond & Melasma)</option>
+                  <option value="mercer">Dr. Julian Mercer, MD, PhD (Polynucleotides & RF)</option>
+                  <option value="laurent">Dr. Camille Laurent, MD (Vascular Laser & Barrier)</option>
+                  <option value="almansoor">Dr. Sophia Al-Mansoor, MD (3D Visia Diagnostics)</option>
                 </select>
               </div>
               <div class="form-group">
@@ -145,37 +146,69 @@
 
             <div class="form-group">
               <label for="notes">Clinical History or Notes</label>
-              <textarea id="notes" class="form-control" rows="4" placeholder="Briefly describe previous treatments or specific skin sensitivities..."></textarea>
+              <textarea id="notes" class="form-control" rows="4" placeholder="Describe previous clinical procedures, current topical regimens, or specific allergies..."></textarea>
             </div>
 
             <button type="submit" class="btn-gallery btn-accent" style="width: 100%; justify-content: center; margin-top: 10px;">Submit Consultation Request →</button>
           </form>
         </div>
 
-        <!-- Sidebar Info -->
+        <!-- Sidebar Contact Info & Atelier Directory -->
         <div>
-          <div style="background-color: var(--bg-card); border: 1px solid var(--border-color); padding: 35px; box-shadow: var(--shadow-subtle);">
-            <span class="eyebrow">Atelier Contact</span>
-            <h3 style="margin-bottom: 24px;">Global Concierge</h3>
+          <div style="background-color: var(--bg-card); border: 1px solid var(--border-color); padding: 35px; box-shadow: var(--shadow-subtle); margin-bottom: 30px;">
+            <span class="eyebrow">GLOBAL DIRECTORY</span>
+            <h3 style="margin-bottom: 24px;">Atelier Contact Details</h3>
 
             <div style="margin-bottom: 24px;">
               <span style="display: block; font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin-bottom: 4px;">PARIS ATELIER</span>
-              <p style="font-size: 0.95rem; color: var(--text-main); margin: 0;">18 Rue du Faubourg Saint-Honoré, 75008 Paris<br>T: +33 1 42 68 50 00</p>
+              <p style="font-size: 0.95rem; color: var(--text-main); margin: 0;">18 Rue du Faubourg Saint-Honoré, 75008 Paris<br>T: +33 1 42 68 50 00<br><small style="color: var(--text-muted);">Mon – Sat: 09:00 — 19:00 GMT</small></p>
+            </div>
+
+            <div style="margin-bottom: 24px;">
+              <span style="display: block; font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin-bottom: 4px;">GENEVA ATELIER</span>
+              <p style="font-size: 0.95rem; color: var(--text-main); margin: 0;">42 Rue du Rhône, 1204 Genève<br>T: +41 22 819 30 00<br><small style="color: var(--text-muted);">Mon – Fri: 09:00 — 18:00 CET</small></p>
             </div>
 
             <div style="margin-bottom: 24px;">
               <span style="display: block; font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin-bottom: 4px;">NEW YORK CLINIC</span>
-              <p style="font-size: 0.95rem; color: var(--text-main); margin: 0;">645 Madison Avenue, 14th Fl, NY 10022<br>T: +1 212 555 0198</p>
-            </div>
-
-            <div style="margin-bottom: 24px;">
-              <span style="display: block; font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin-bottom: 4px;">EMAIL CONCIERGE</span>
-              <p style="font-size: 0.95rem; color: var(--text-main); margin: 0;">concierge@elixirdermatologie.com</p>
+              <p style="font-size: 0.95rem; color: var(--text-main); margin: 0;">645 Madison Avenue, 14th Fl, NY 10022<br>T: +1 212 555 0198<br><small style="color: var(--text-muted);">Mon – Sat: 08:30 — 19:30 EST</small></p>
             </div>
 
             <div style="padding-top: 20px; border-top: 1px solid var(--border-color); font-size: 0.85rem; color: var(--text-muted);">
-              Private underground valet parking available at Paris and New York clinic entrances.
+              Private underground valet parking and direct elevator access available at all locations.
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Consultation FAQ Section -->
+    <section class="section-padding bg-secondary">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 50px;">
+          <span class="eyebrow">PRE-CONSULTATION GUIDANCE</span>
+          <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <div class="gallery-grid" style="grid-template-columns: repeat(2, 1fr);">
+          <div style="background-color: var(--bg-card); padding: 30px; border: 1px solid var(--border-color);">
+            <h4 style="margin-bottom: 12px; font-size: 1.2rem;">How should I prepare for my 3D Visia Diagnostic Scan?</h4>
+            <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.7;">Please arrive with clean skin free of heavy makeup, mineral sunscreen, or topical oils. This ensures 100% accurate multispectral UV porphyrin and melanin readings.</p>
+          </div>
+
+          <div style="background-color: var(--bg-card); padding: 30px; border: 1px solid var(--border-color);">
+            <h4 style="margin-bottom: 12px; font-size: 1.2rem;">Are virtual tele-dermatology consultations available?</h4>
+            <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.7;">Yes. International clients can request a 45-minute virtual video assessment. You will receive a high-resolution photo kit to capture baseline images prior to your call.</p>
+          </div>
+
+          <div style="background-color: var(--bg-card); padding: 30px; border: 1px solid var(--border-color);">
+            <h4 style="margin-bottom: 12px; font-size: 1.2rem;">What downtime is expected after picosecond laser or RF micro-needling?</h4>
+            <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.7;">Picosecond laser protocols carry zero social downtime (mild erythema resolves in 2–4 hours). Sub-dermal RF micro-needling requires 24 hours of barrier soothing serum application.</p>
+          </div>
+
+          <div style="background-color: var(--bg-card); padding: 30px; border: 1px solid var(--border-color);">
+            <h4 style="margin-bottom: 12px; font-size: 1.2rem;">How far in advance should appointments be reserved?</h4>
+            <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.7;">In-person consultations with Dr. Vance and Dr. Mercer are typically booked 2 to 3 weeks in advance. Urgent post-procedure consultations are accommodated within 48 hours.</p>
           </div>
         </div>
       </div>

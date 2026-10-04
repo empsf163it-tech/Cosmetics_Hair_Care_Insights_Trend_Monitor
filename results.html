@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Results Gallery & Clinical Archive — Élixir Dermatologie</title>
-  <meta name="description" content="Explore standardized before and after clinical photography documenting patient outcomes for skin rejuvenation, pigment removal, and texture remodeling.">
+  <title>Results Archive & Case Studies — Élixir Dermatologie</title>
+  <meta name="description" content="Standardized before and after clinical photography documenting patient outcomes for skin rejuvenation, pigment removal, and texture remodeling.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -22,7 +23,6 @@
 
       <div class="brand-logo">
         <a href="index.html">Élixir Dermatologie</a>
-        <span>Results Gallery</span>
       </div>
 
       <nav class="nav-links-desktop">
@@ -38,7 +38,7 @@
     </div>
   </header>
 
-  <!-- Overlay -->
+  <!-- Overlay Navigation -->
   <div class="gallery-overlay" id="menuOverlay">
     <div class="container">
       <div class="overlay-header">
@@ -52,168 +52,168 @@
 
       <div class="overlay-body">
         <nav class="overlay-nav">
-          <a href="index.html"><span class="num">01</span> Home Gallery</a>
-          <a href="treatments.html"><span class="num">02</span> Treatments Collection</a>
-          <a href="treatment-detail.html"><span class="num">03</span> Treatment Spotlight</a>
-          <a href="results.html" class="active"><span class="num">04</span> Results Archive</a>
-          <a href="specialists.html"><span class="num">05</span> Clinical Specialists</a>
-          <a href="trends.html"><span class="num">06</span> Editorial Journal</a>
-          <a href="contact.html"><span class="num">07</span> Book Consultation</a>
+          <a href="index.html"><span class="num">01</span> Home</a>
+          <a href="treatments.html"><span class="num">02</span> Treatments</a>
+          <a href="results.html" class="active"><span class="num">03</span> Results</a>
+          <a href="specialists.html"><span class="num">04</span> Specialists</a>
+          <a href="trends.html"><span class="num">05</span> Journal</a>
+          <a href="contact.html"><span class="num">06</span> Contact</a>
         </nav>
       </div>
     </div>
-  </header>
+  </div>
 
   <div class="page-wrapper">
     <!-- Header -->
     <section class="section-padding-sm border-bottom">
       <div class="container" style="text-align: center; max-width: 800px;">
-        <span class="eyebrow">Standardized Clinical Evidence</span>
-        <h1>Results Gallery & <span class="script">Clinical Archive</span></h1>
-        <p class="lead">All photographs are captured under identical polarized studio lighting without retouching or filtration. Results reflect actual patient outcomes following prescribed treatment protocols.</p>
+        <span class="eyebrow">CLINICAL PHOTOGRAPHY ARCHIVE</span>
+        <h1>Documented <span class="script">Outcomes & Case Studies</span></h1>
+        <p class="lead">All photographs are captured in standardized polarization lighting under 3D Visia spectral calibration. Unretouched, authentic anatomical documentation.</p>
       </div>
     </section>
 
-    <!-- Interactive Case Study 1 -->
+    <!-- Case Study 1 (Side-by-Side: Info Left, Images Right) -->
     <section class="section-padding border-bottom">
       <div class="container">
-        <div style="margin-bottom: 30px; display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 20px;">
-          <div>
-            <span class="eyebrow">Case Study #01 • Pigmentation Clearance</span>
-            <h2>Refractory Epidermal <span class="script">Melasma</span>.</h2>
-          </div>
-          <a href="treatment-detail.html" class="link-arrow">View Picosecond Protocol →</a>
-        </div>
+        <div class="case-study-split">
+          <!-- Information & Link Side -->
+          <div class="case-study-info">
+            <span class="eyebrow">CASE STUDY #01 • PIGMENT CLEARANCE</span>
+            <h2 style="margin-bottom: 16px;">Refractory Epidermal <span class="script">Melasma</span>.</h2>
+            <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.8; margin-bottom: 28px;">Patient presented with 4-year stubborn bilateral cheek hyperpigmentation resistant to topical hydroquinone. Treated with 3 sessions of Picosecond Acoustic Shockwave laser combined with intradermal Vitamin C bio-infusion.</p>
 
-        <div class="before-after-container">
-          <div class="ba-image ba-after">
-            <img src="https://images.unsplash.com/photo-1512290900673-7002ddb9338b?auto=format&fit=crop&w=1400&q=85" alt="Skin texture post-treatment">
-            <div class="ba-label">AFTER • 8 WEEKS POST 3RD SESSION</div>
-          </div>
-          <div class="ba-image ba-before">
-            <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=1400&q=85" alt="Skin texture pre-treatment">
-            <div class="ba-label">BEFORE • INITIAL DIAGNOSTIC</div>
-          </div>
-          <div class="ba-slider-handle">
-            <div class="ba-handle-circle">↔</div>
-          </div>
-        </div>
+            <div class="case-study-meta-grid">
+              <div>
+                <span>PATIENT PROFILE</span>
+                <strong>Female, 44 Years</strong>
+              </div>
+              <div>
+                <span>DIAGNOSIS</span>
+                <strong>Malar Hyperpigmentation</strong>
+              </div>
+              <div>
+                <span>PROTOCOL</span>
+                <strong>3x Picosecond Laser</strong>
+              </div>
+              <div>
+                <span>MEASURED OUTCOME</span>
+                <strong>92% Melanin Reduction</strong>
+              </div>
+            </div>
 
-        <div style="margin-top: 35px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; background-color: var(--bg-card); padding: 24px; border: 1px solid var(--border-color);">
-          <div>
-            <span style="display: block; font-size: 0.7rem; color: var(--accent); text-transform: uppercase;">PATIENT AGE</span>
-            <strong>Female, 44 Years</strong>
+            <div style="margin-top: 30px;">
+              <a href="treatment-detail.html" class="btn-gallery">View Picosecond Protocol →</a>
+            </div>
           </div>
-          <div>
-            <span style="display: block; font-size: 0.7rem; color: var(--accent); text-transform: uppercase;">DIAGNOSIS</span>
-            <strong>Malar Hyperpigmentation</strong>
-          </div>
-          <div>
-            <span style="display: block; font-size: 0.7rem; color: var(--accent); text-transform: uppercase;">PROTOCOL</span>
-            <strong>3x Picosecond Laser + Topical C</strong>
-          </div>
-          <div>
-            <span style="display: block; font-size: 0.7rem; color: var(--accent); text-transform: uppercase;">OUTCOME</span>
-            <strong>92% Melanin Reduction</strong>
+
+          <!-- Images Side -->
+          <div class="case-study-media">
+            <div class="case-media-item">
+              <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=800&q=85" alt="Melasma Pre Treatment">
+              <span class="ba-tag tag-before">BEFORE</span>
+            </div>
+            <div class="case-media-item">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=85" alt="Melasma Post Treatment">
+              <span class="ba-tag tag-after">AFTER</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Interactive Case Study 2 -->
+    <!-- Case Study 2 (Side-by-Side: Images Left, Info Right) -->
     <section class="section-padding bg-secondary border-bottom">
       <div class="container">
-        <div style="margin-bottom: 30px; display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 20px;">
-          <div>
-            <span class="eyebrow">Case Study #02 • Structural Remodeling</span>
-            <h2>Periorbital Laxity & <span class="script">Fine Lines</span>.</h2>
+        <div class="case-study-split">
+          <!-- Images Side -->
+          <div class="case-study-media">
+            <div class="case-media-item">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=85" alt="Skin Laxity Pre Treatment">
+              <span class="ba-tag tag-before">BEFORE</span>
+            </div>
+            <div class="case-media-item">
+              <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=85" alt="Skin Laxity Post Treatment">
+              <span class="ba-tag tag-after">AFTER</span>
+            </div>
           </div>
-          <a href="treatments.html" class="link-arrow">View Micro-Needling Protocol →</a>
-        </div>
 
-        <div class="before-after-container">
-          <div class="ba-image ba-after">
-            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=1400&q=85" alt="Post collagen restoration">
-            <div class="ba-label">AFTER • 12 WEEKS POST PROTOCOL</div>
-          </div>
-          <div class="ba-image ba-before">
-            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1400&q=85" alt="Pre treatment fine lines">
-            <div class="ba-label">BEFORE • INITIAL DIAGNOSTIC</div>
-          </div>
-          <div class="ba-slider-handle">
-            <div class="ba-handle-circle">↔</div>
-          </div>
-        </div>
+          <!-- Information & Link Side -->
+          <div class="case-study-info">
+            <span class="eyebrow">CASE STUDY #02 • STRUCTURAL REMODELING</span>
+            <h2 style="margin-bottom: 16px;">Periorbital Laxity & <span class="script">Fine Lines</span>.</h2>
+            <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.8; margin-bottom: 28px;">Patient exhibited collagen degradation and periocular skin laxity. Administered 3 sessions of Fractional Insulated RF Micro-Needling combined with intradermal Polynucleotide bio-stimulation.</p>
 
-        <div style="margin-top: 35px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; background-color: var(--bg-card); padding: 24px; border: 1px solid var(--border-color);">
-          <div>
-            <span style="display: block; font-size: 0.7rem; color: var(--accent); text-transform: uppercase;">PATIENT AGE</span>
-            <strong>Female, 51 Years</strong>
-          </div>
-          <div>
-            <span style="display: block; font-size: 0.7rem; color: var(--accent); text-transform: uppercase;">DIAGNOSIS</span>
-            <strong>Loss of Dermal Elasticity</strong>
-          </div>
-          <div>
-            <span style="display: block; font-size: 0.7rem; color: var(--accent); text-transform: uppercase;">PROTOCOL</span>
-            <strong>2x RF Micro-Needling + Polynucleotide</strong>
-          </div>
-          <div>
-            <span style="display: block; font-size: 0.7rem; color: var(--accent); text-transform: uppercase;">OUTCOME</span>
-            <strong>Significant Collagen Density Increase</strong>
+            <div class="case-study-meta-grid">
+              <div>
+                <span>PATIENT PROFILE</span>
+                <strong>Female, 51 Years</strong>
+              </div>
+              <div>
+                <span>DIAGNOSIS</span>
+                <strong>Periorbital Elastosis</strong>
+              </div>
+              <div>
+                <span>PROTOCOL</span>
+                <strong>RF Micro-Needling + PDRN</strong>
+              </div>
+              <div>
+                <span>MEASURED OUTCOME</span>
+                <strong>+44% Dermal Density</strong>
+              </div>
+            </div>
+
+            <div style="margin-top: 30px;">
+              <a href="treatments.html" class="btn-gallery">View Micro-Needling Protocol →</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Additional Editorial Case Study Grid -->
-    <section class="section-padding">
+    <!-- Case Study 3 (Side-by-Side: Info Left, Images Right) -->
+    <section class="section-padding border-bottom">
       <div class="container">
-        <div style="text-align: center; max-width: 600px; margin: 0 auto 50px;">
-          <span class="eyebrow">Dermatology Archives</span>
-          <h2>Selected Clinical Summaries</h2>
-        </div>
+        <div class="case-study-split">
+          <!-- Information & Link Side -->
+          <div class="case-study-info">
+            <span class="eyebrow">CASE STUDY #03 • VASCULAR REDUCTION</span>
+            <h2 style="margin-bottom: 16px;">Diffuse Erythema & <span class="script">Rosacea</span>.</h2>
+            <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.8; margin-bottom: 28px;">Persistent facial flushing and telangiectasia. Treated with 4 sessions of 595nm Pulsed Dye Laser combined with physiological 3:1:1 lipid barrier recovery cream.</p>
 
-        <div class="gallery-grid">
-          <div class="gallery-card">
-            <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=85" alt="Acne scarring reduction case">
-            </div>
-            <div class="card-content">
-              <div class="card-code">CASE #084</div>
-              <h3>Atrophic Acne Scar Resurfacing</h3>
-              <p>Combination protocol of subcision and non-ablative fractional laser yielding a smooth epidermal texture over 16 weeks.</p>
-              <div class="card-footer">
-                <span>4 Sessions • 80% Improvement</span>
+            <div class="case-study-meta-grid">
+              <div>
+                <span>PATIENT PROFILE</span>
+                <strong>Male, 38 Years</strong>
               </div>
+              <div>
+                <span>DIAGNOSIS</span>
+                <strong>Erythematotelangiectatic Rosacea</strong>
+              </div>
+              <div>
+                <span>PROTOCOL</span>
+                <strong>595nm PDL Laser + Lipids</strong>
+              </div>
+              <div>
+                <span>MEASURED OUTCOME</span>
+                <strong>88% Redness Eradication</strong>
+              </div>
+            </div>
+
+            <div style="margin-top: 30px;">
+              <a href="ingredients.html" class="btn-gallery">View Barrier Formulation →</a>
             </div>
           </div>
 
-          <div class="gallery-card">
-            <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=85" alt="Rosacea capillary reduction">
+          <!-- Images Side -->
+          <div class="case-study-media">
+            <div class="case-media-item">
+              <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=800&q=85" alt="Rosacea Pre Treatment">
+              <span class="ba-tag tag-before">BEFORE</span>
             </div>
-            <div class="card-content">
-              <div class="card-code">CASE #112</div>
-              <h3>Erythematotelangiectatic Rosacea</h3>
-              <p>Nd:YAG 1064nm vascular laser target pulses eliminating telangiectasias around the nasal and cheek boundaries.</p>
-              <div class="card-footer">
-                <span>2 Sessions • Capillary Elimination</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="gallery-card">
-            <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1519415943484-9fa1873496d4?auto=format&fit=crop&w=800&q=85" alt="Skin barrier restoration">
-            </div>
-            <div class="card-content">
-              <div class="card-code">CASE #145</div>
-              <h3>Epidermal Barrier & Lipid Repair</h3>
-              <p>Biphasic TCA peel with biomimetic lipid replacement restoring skin hydration and reducing sensitivity.</p>
-              <div class="card-footer">
-                <span>3 Sessions • Barrier Restored</span>
-              </div>
+            <div class="case-media-item">
+              <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=85" alt="Rosacea Post Treatment">
+              <span class="ba-tag tag-after">AFTER</span>
             </div>
           </div>
         </div>
