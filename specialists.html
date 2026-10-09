@@ -3,12 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clinical Specialists & Leadership — Élixir Dermatologie</title>
-  <meta name="description" content="Meet our international team of board-certified dermatologists, laser physicists, and skin regeneration researchers.">
+  <title>Specialists & Analysts — Cosmetics & Hair Care Trend Monitor</title>
+  <meta name="description" content="Meet our team of cosmetic chemists, trichologists, and hair care trend analysts.">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+  <!-- Live Trend Ticker Bar -->
+  <div class="trend-ticker-bar">
+    <div class="trend-ticker-inner">
+      <div class="ticker-item">
+        <span class="pulse-dot"></span>
+        <span class="ticker-badge">SPECIALIST REPORT</span>
+        <strong>Hair Density Research:</strong> Led by Dr. Hélène Vance
+      </div>
+      <div class="ticker-item">
+        <span class="ticker-badge">SPECIALIST REPORT</span>
+        <strong>Clean Beauty Formulation:</strong> Led by Dr. Julian Mercer
+      </div>
+      <!-- Loop -->
+      <div class="ticker-item">
+        <span class="pulse-dot"></span>
+        <span class="ticker-badge">SPECIALIST REPORT</span>
+        <strong>Hair Density Research:</strong> Led by Dr. Hélène Vance
+      </div>
+    </div>
+  </div>
 
   <!-- Header -->
   <header class="header-gallery">
@@ -22,28 +43,29 @@
       </button>
 
       <div class="brand-logo">
-        <a href="index.html">Élixir Dermatologie</a>
+        <a href="index.html">Élixir Trends</a>
       </div>
 
       <nav class="nav-links-desktop">
         <a href="index.html">Home</a>
-        <a href="treatments.html">Treatments</a>
-        <a href="results.html">Results</a>
-        <a href="specialists.html" class="active">Specialists</a>
-        <a href="trends.html">Journal</a>
-        <a href="contact.html">Contact</a>
+        <a href="haircare.html">Hair Care</a>
+        <a href="trends.html">Trends</a>
+        <a href="ingredients.html">Actives</a>
+        <a href="insights.html">Insights</a>
+        <a href="specialists.html" class="active">Team</a>
+        <a href="dashboard.html">Dashboard</a>
       </nav>
 
-      <a href="contact.html" class="header-cta">Book Consultation</a>
+      <a href="login.html" class="header-cta" style="display: flex !important;">Login</a>
     </div>
   </header>
 
-  <!-- Overlay Navigation -->
+  <!-- Overlay -->
   <div class="gallery-overlay" id="menuOverlay">
     <div class="container">
       <div class="overlay-header">
         <div class="brand-logo" style="text-align: left;">
-          <a href="index.html" style="color: #fff; font-family: var(--font-script);">Élixir Dermatologie</a>
+          <a href="index.html" style="color: #fff; font-family: var(--font-script);">Élixir Trends</a>
         </div>
         <button class="close-trigger" aria-label="Close Menu">
           <span>Close</span> ✕
@@ -53,11 +75,13 @@
       <div class="overlay-body">
         <nav class="overlay-nav">
           <a href="index.html"><span class="num">01</span> Home</a>
-          <a href="treatments.html"><span class="num">02</span> Treatments</a>
-          <a href="results.html"><span class="num">03</span> Results</a>
-          <a href="specialists.html" class="active"><span class="num">04</span> Specialists</a>
-          <a href="trends.html"><span class="num">05</span> Journal</a>
-          <a href="contact.html"><span class="num">06</span> Contact</a>
+          <a href="haircare.html"><span class="num">02</span> Hair Care</a>
+          <a href="trends.html"><span class="num">03</span> Trends</a>
+          <a href="ingredients.html"><span class="num">04</span> Actives</a>
+          <a href="insights.html"><span class="num">05</span> Insights</a>
+          <a href="specialists.html" class="active"><span class="num">06</span> Team</a>
+          <a href="dashboard.html"><span class="num">07</span> Dashboard</a>
+          <a href="contact.html"><span class="num">08</span> Contact</a>
         </nav>
       </div>
     </div>
@@ -67,9 +91,9 @@
     <!-- Header -->
     <section class="section-padding-sm border-bottom">
       <div class="container" style="text-align: center; max-width: 800px;">
-        <span class="eyebrow">MEDICAL LEADERSHIP & RESEARCHERS</span>
-        <h1>Board-Certified <span class="script">Specialists</span></h1>
-        <p class="lead">Every consultation, diagnostic skin map, and laser protocol at Élixir Dermatologie is personally developed and administered by internationally renowned dermatologists.</p>
+        <span class="eyebrow">TREND TEAM & LEADERSHIP</span>
+        <h1>Our Hair & Beauty <span class="script">Specialists</span></h1>
+        <p class="lead">Meet our friendly team of hair care specialists, cosmetic chemists, and beauty analysts who study clean ingredients and natural hair growth.</p>
       </div>
     </section>
 
@@ -82,34 +106,34 @@
           </div>
           <div class="specialist-info">
             <h3>Dr. Hélène Vance, MD</h3>
-            <span class="specialist-title">Chief Dermatologist & Founder • Paris & Geneva</span>
-            <p class="specialist-bio">Former Research Fellow at Institut Curie Paris and Harvard Medical School. Dr. Vance pioneered the protocol for ultra-short picosecond melanin dissipation without thermal inflammation. Over 18 years of clinical experience in refractory melasma and hyperpigmentation.</p>
+            <span class="specialist-title">Lead Scalp & Hair Care Fellow • Paris</span>
+            <p class="specialist-bio">Dr. Vance has over 18 years of experience studying hair scalp nourishment, natural hair density oils, and gentle skin glow techniques. She leads our monthly hair care research reports.</p>
 
             <div class="handwritten-note">
-              “Precision skin restoration requires honoring individual anatomical boundaries.”
+              “Great hair and healthy skin come from clean, gentle daily care routines.”
             </div>
 
             <div class="specialist-credentials">
               <div class="cred-item">
-                <span>Academic Degrees</span>
-                <strong>MD (Sorbonne University), Fellow (Harvard)</strong>
+                <span>Specialization</span>
+                <strong>Hair Density & Scalp Serums</strong>
               </div>
               <div class="cred-item">
-                <span>Clinical Focus</span>
-                <strong>Picosecond Laser & Melanin Eradication</strong>
+                <span>Focus Area</span>
+                <strong>Natural Plant Oils & Skin Glow</strong>
               </div>
               <div class="cred-item">
                 <span>Publications</span>
-                <strong>24 Peer-Reviewed Journal Articles</strong>
+                <strong>24 Simple Trend Reports</strong>
               </div>
               <div class="cred-item">
                 <span>Languages</span>
-                <strong>French, English, German</strong>
+                <strong>English, French, German</strong>
               </div>
             </div>
 
             <div>
-              <a href="contact.html" class="btn-gallery btn-accent">Consult with Dr. Vance →</a>
+              <a href="contact.html" class="btn-gallery btn-accent">Contact</a>
             </div>
           </div>
         </div>
@@ -121,166 +145,30 @@
       <div class="container">
         <div class="specialist-card" style="margin-bottom: 0;">
           <div class="specialist-portrait">
-            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=800&q=85" alt="Dr. Julian Mercer, MD, PhD">
+            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=800&q=85" alt="Dr. Julian Mercer, MD">
           </div>
           <div class="specialist-info">
-            <h3>Dr. Julian Mercer, MD, PhD</h3>
-            <span class="specialist-title">Lead Regenerative Dermatologist • New York</span>
-            <p class="specialist-bio">Doctorate in Molecular Cellular Biology from Johns Hopkins University. Dr. Mercer specializes in intradermal polynucleotide therapies, RF micro-needling, and extracellular matrix (ECM) fibroblast bio-stimulation for structural dermal remodeling.</p>
+            <h3>Dr. Julian Mercer, PhD</h3>
+            <span class="specialist-title">Senior Cosmetic Chemist • New York</span>
+            <p class="specialist-bio">Dr. Mercer tests active ingredients like ceramides, hyaluronic hydrators, and plant proteins to make sure products deliver gentle moisture and effective results.</p>
 
             <div class="handwritten-note">
-              “Biostimulation activates the skin’s native collagen repair mechanism.”
+              “Simple, clean formulas always protect the skin best.”
             </div>
 
             <div class="specialist-credentials">
               <div class="cred-item">
-                <span>Academic Degrees</span>
-                <strong>MD, PhD (Johns Hopkins University)</strong>
+                <span>Specialization</span>
+                <strong>Clean Cosmetic Formulas</strong>
               </div>
               <div class="cred-item">
-                <span>Clinical Focus</span>
-                <strong>Polynucleotides & Sub-Dermal RF</strong>
-              </div>
-              <div class="cred-item">
-                <span>Publications</span>
-                <strong>18 Patents & Clinical Papers</strong>
-              </div>
-              <div class="cred-item">
-                <span>Languages</span>
-                <strong>English, Spanish</strong>
+                <span>Focus Area</span>
+                <strong>Plant Ceramides & Moisture Barriers</strong>
               </div>
             </div>
 
             <div>
-              <a href="contact.html" class="btn-gallery btn-accent">Consult with Dr. Mercer →</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Specialist 3 -->
-    <section class="section-padding border-bottom">
-      <div class="container">
-        <div class="specialist-card" style="margin-bottom: 0;">
-          <div class="specialist-portrait">
-            <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=800&q=85" alt="Dr. Camille Laurent, MD">
-          </div>
-          <div class="specialist-info">
-            <h3>Dr. Camille Laurent, MD</h3>
-            <span class="specialist-title">Director of Vascular & Barrier Therapy • Paris</span>
-            <p class="specialist-bio">Specialist in cutaneous micro-vascular disorders and barrier lipid chemistry from Université Paris Cité. Dr. Laurent oversees custom TCA chemical peel protocols, rosacea laser treatments, and lipid barrier rebuilding.</p>
-
-            <div class="handwritten-note">
-              “A calm, hydrated skin barrier is the prerequisite for all rejuvenation.”
-            </div>
-
-            <div class="specialist-credentials">
-              <div class="cred-item">
-                <span>Academic Degrees</span>
-                <strong>MD (Université Paris Cité)</strong>
-              </div>
-              <div class="cred-item">
-                <span>Clinical Focus</span>
-                <strong>Vascular Laser & Lipid Barrier Chemistry</strong>
-              </div>
-              <div class="cred-item">
-                <span>Publications</span>
-                <strong>15 Dermatological Monographs</strong>
-              </div>
-              <div class="cred-item">
-                <span>Languages</span>
-                <strong>French, English, Italian</strong>
-              </div>
-            </div>
-
-            <div>
-              <a href="contact.html" class="btn-gallery btn-accent">Consult with Dr. Laurent →</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Specialist 4 -->
-    <section class="section-padding bg-secondary border-bottom">
-      <div class="container">
-        <div class="specialist-card" style="margin-bottom: 0;">
-          <div class="specialist-portrait">
-            <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=85" alt="Dr. Sophia Al-Mansoor, MD">
-          </div>
-          <div class="specialist-info">
-            <h3>Dr. Sophia Al-Mansoor, MD</h3>
-            <span class="specialist-title">Director of 3D Diagnostics & Visia Imaging • Geneva</span>
-            <p class="specialist-bio">Pioneer in 3D multispectral UV skin analysis from the University of Geneva. Dr. Al-Mansoor formulates bespoke diagnostic profiles and preventative melanin roadmap plans for international clientele.</p>
-
-            <div class="handwritten-note">
-              “Sub-surface UV imaging reveals skin health years before surface changes.”
-            </div>
-
-            <div class="specialist-credentials">
-              <div class="cred-item">
-                <span>Academic Degrees</span>
-                <strong>MD (University of Geneva Medical School)</strong>
-              </div>
-              <div class="cred-item">
-                <span>Clinical Focus</span>
-                <strong>3D Visia Mapping & Preventive Diagnostics</strong>
-              </div>
-              <div class="cred-item">
-                <span>Publications</span>
-                <strong>12 Optical Imaging Studies</strong>
-              </div>
-              <div class="cred-item">
-                <span>Languages</span>
-                <strong>French, English, Arabic</strong>
-              </div>
-            </div>
-
-            <div>
-              <a href="contact.html" class="btn-gallery btn-accent">Consult with Dr. Al-Mansoor →</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Atelier Environments Showcase -->
-    <section class="section-padding">
-      <div class="container">
-        <div style="margin-bottom: 50px; text-align: center;">
-          <span class="eyebrow">OUR CLINICAL ATELIERS</span>
-          <h2>Designed for Total Privacy & Serenity</h2>
-        </div>
-
-        <div class="gallery-grid">
-          <div class="gallery-card">
-            <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=85" alt="Luxury dermatological consultation suite">
-            </div>
-            <div class="card-content">
-              <h3>Private Consultation Suites</h3>
-              <p>Soundproofed architectural suites equipped with 3D Visia multispectral diagnostic scanners and acoustic ambient dampening.</p>
-            </div>
-          </div>
-
-          <div class="gallery-card">
-            <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=85" alt="Clinical laser room">
-            </div>
-            <div class="card-content">
-              <h3>Sterile Laser Laboratories</h3>
-              <p>Positive-pressure HEPA air filtration systems ensuring zero airborne particulates during energetic laser and micro-needling protocols.</p>
-            </div>
-          </div>
-
-          <div class="gallery-card">
-            <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=800&q=85" alt="Aesthetic recovery lounge">
-            </div>
-            <div class="card-content">
-              <h3>Post-Procedure Recovery Lounges</h3>
-              <p>Private recovery alcoves providing bio-mimetic lipid mask application and LED photomodulation recovery light therapy.</p>
+              <a href="contact.html" class="btn-gallery">Contact</a>
             </div>
           </div>
         </div>
@@ -288,15 +176,15 @@
     </section>
   </div>
 
-  <!-- Minimal Footer with Newsletter & 3 Social Icons -->
+  <!-- Footer -->
   <footer class="footer-editorial">
     <div class="container">
       <div class="footer-newsletter-wrap">
         <div class="newsletter-info">
-          <h3>Stay updated with <span class="script" style="color: var(--accent);">skin intelligence</span>.</h3>
-          <p>Receive our monthly research dossier on picosecond laser physics, polynucleotides, and barrier care.</p>
+          <h3>Stay updated with <span class="script" style="color: var(--accent);">specialist trend reports</span>.</h3>
+          <p>Subscribe to receive simple monthly beauty, hair care, and active ingredient summaries.</p>
         </div>
-        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Élixir Dermatologie Journal.'); this.reset();">
+        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Cosmetics & Hair Care Trend Monitor.'); this.reset();">
           <input type="email" class="newsletter-input" placeholder="Enter your email address..." required>
           <button type="submit" class="btn-gallery btn-accent" style="padding: 14px 28px;">Subscribe</button>
         </form>
@@ -304,16 +192,17 @@
 
       <div class="footer-minimal-nav">
         <div class="brand-logo" style="text-align: left;">
-          <a href="index.html" style="color: #fff; font-family: var(--font-script); font-size: 2rem;">Élixir Dermatologie</a>
+          <a href="index.html" style="color: #fff; font-family: var(--font-script); font-size: 2rem;">Élixir Trends</a>
+          <span style="display:block; font-size: 0.65rem; color: var(--accent); letter-spacing: 0.15em; text-transform: uppercase;">Cosmetics & Hair Care Trend Monitor</span>
         </div>
 
         <div class="footer-links-minimal">
-          <a href="index.html">Home</a>
-          <a href="treatments.html">Treatments</a>
-          <a href="results.html">Results Archive</a>
-          <a href="specialists.html" class="active">Specialists</a>
-          <a href="trends.html">Journal</a>
-          <a href="contact.html">Book Consultation</a>
+          <a href="haircare.html">Hair Care</a>
+          <a href="trends.html">Trends</a>
+          <a href="ingredients.html">Actives</a>
+          <a href="insights.html">Insights</a>
+          <a href="specialists.html">Team</a>
+          <a href="dashboard.html">Dashboard</a>
         </div>
 
         <div class="footer-social-icons">
@@ -330,11 +219,16 @@
       </div>
 
       <div class="footer-bottom">
-        <div>© <span data-year>2026</span> Élixir Dermatologie. All rights reserved.</div>
+        <div>© <span data-year>2026</span> Cosmetics & Hair Care Insights & Trend Monitor. All rights reserved.</div>
         <div>Paris • Geneva • New York</div>
       </div>
     </div>
-  </footer>
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
 
   <script src="js/main.js"></script>
 </body>

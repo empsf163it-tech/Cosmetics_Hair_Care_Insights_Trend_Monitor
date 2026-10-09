@@ -3,12 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Patient Dossier — Élixir Dermatologie</title>
-  <meta name="description" content="Private patient portal for Eleanor Vane. View upcoming consultations, treatment history logs, and specialist care notes.">
+  <title>Monitor Dashboard — Cosmetics & Hair Care Trend Monitor</title>
+  <meta name="description" content="Personal intelligence dashboard tracking hair care trends, active ingredients, saved reports, and analyst notes.">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+  <!-- Live Trend Ticker Bar -->
+  <div class="trend-ticker-bar">
+    <div class="trend-ticker-inner">
+      <div class="ticker-item">
+        <span class="pulse-dot"></span>
+        <span class="ticker-badge">LIVE DASHBOARD</span>
+        <strong>Hair Density Serums:</strong> +342% Interest
+      </div>
+      <div class="ticker-item">
+        <span class="ticker-badge">LIVE DASHBOARD</span>
+        <strong>Plant Ceramides:</strong> +215% Index Score
+      </div>
+      <!-- Loop -->
+      <div class="ticker-item">
+        <span class="pulse-dot"></span>
+        <span class="ticker-badge">LIVE DASHBOARD</span>
+        <strong>Hair Density Serums:</strong> +342% Interest
+      </div>
+    </div>
+  </div>
 
   <!-- Header -->
   <header class="header-gallery">
@@ -22,20 +43,20 @@
       </button>
 
       <div class="brand-logo">
-        <a href="index.html">Élixir Dermatologie</a>
-        <span>Patient Dossier</span>
+        <a href="index.html">Élixir Trends</a>
       </div>
 
       <nav class="nav-links-desktop">
         <a href="index.html">Home</a>
-        <a href="treatments.html">Treatments</a>
-        <a href="results.html">Results</a>
-        <a href="specialists.html">Specialists</a>
-        <a href="trends.html">Journal</a>
-        <a href="dashboard.html" class="active">Patient Dossier</a>
+        <a href="haircare.html">Hair Care</a>
+        <a href="trends.html">Trends</a>
+        <a href="ingredients.html">Actives</a>
+        <a href="insights.html">Insights</a>
+        <a href="specialists.html">Team</a>
+        <a href="dashboard.html" class="active">Dashboard</a>
       </nav>
 
-      <a href="index.html" class="header-cta">Sign Out</a>
+      <a href="index.html" class="header-cta" style="display: flex !important;">Sign Out</a>
     </div>
   </header>
 
@@ -44,7 +65,7 @@
     <div class="container">
       <div class="overlay-header">
         <div class="brand-logo" style="text-align: left;">
-          <a href="index.html" style="color: #fff; font-family: var(--font-script);">Élixir Dermatologie</a>
+          <a href="index.html" style="color: #fff; font-family: var(--font-script);">Élixir Trends</a>
         </div>
         <button class="close-trigger" aria-label="Close Menu">
           <span>Close</span> ✕
@@ -54,15 +75,17 @@
       <div class="overlay-body">
         <nav class="overlay-nav">
           <a href="index.html"><span class="num">01</span> Home</a>
-          <a href="treatments.html"><span class="num">02</span> Treatments</a>
-          <a href="results.html"><span class="num">03</span> Results</a>
-          <a href="specialists.html"><span class="num">04</span> Specialists</a>
-          <a href="trends.html"><span class="num">05</span> Journal</a>
-          <a href="contact.html"><span class="num">06</span> Contact</a>
+          <a href="haircare.html"><span class="num">02</span> Hair Care</a>
+          <a href="trends.html"><span class="num">03</span> Trends</a>
+          <a href="ingredients.html"><span class="num">04</span> Actives</a>
+          <a href="insights.html"><span class="num">05</span> Insights</a>
+          <a href="specialists.html"><span class="num">06</span> Team</a>
+          <a href="dashboard.html" class="active"><span class="num">07</span> Dashboard</a>
+          <a href="contact.html"><span class="num">08</span> Contact</a>
         </nav>
       </div>
     </div>
-  </header>
+  </div>
 
   <div class="page-wrapper">
     <!-- Header Banner -->
@@ -70,148 +93,119 @@
       <div class="container">
         <div class="dashboard-user-bar">
           <div>
-            <span class="eyebrow">CONFIDENTIAL DERMATOLOGY DOSSIER</span>
+            <span class="eyebrow">TREND MONITOR DASHBOARD</span>
             <h1>Welcome back, <span class="script">Eleanor</span>.</h1>
-            <p style="color: var(--text-muted);">Patient ID: <strong style="color: var(--text-main);">#PAR-89240</strong> • Assigned Atelier: <strong style="color: var(--text-main);">Paris Faubourg</strong></p>
+            <p style="color: var(--text-muted);">Account ID: <strong style="color: var(--text-main);">#PAR-89240</strong> • Status: <strong style="color: var(--text-main);">Active Member</strong></p>
           </div>
 
           <div>
-            <a href="contact.html" class="btn-gallery btn-accent">Request Next Session</a>
+            <a href="contact.html" class="btn-gallery btn-accent">Request Custom Report</a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Dashboard Content -->
-    <section class="container">
+    <section class="container section-padding-sm">
       <div class="dashboard-grid">
-        <!-- Quiet Sidebar Navigation -->
+        <!-- Sidebar Navigation -->
         <aside class="dashboard-sidebar">
           <button class="dash-nav-btn active" data-tab="upcoming">
-            <span>01</span> Upcoming Consultation
+            <span>01</span> Live Hair & Skin Index
           </button>
           <button class="dash-nav-btn" data-tab="saved">
-            <span>02</span> Saved Protocols
+            <span>02</span> Saved Trend Reports
           </button>
           <button class="dash-nav-btn" data-tab="history">
-            <span>03</span> Treatment History Log
+            <span>03</span> Search History
           </button>
           <button class="dash-nav-btn" data-tab="notes">
-            <span>04</span> Specialist Notes
+            <span>04</span> Analyst Notes
           </button>
         </aside>
 
         <!-- Main Panel Views -->
         <main>
-          <!-- Panel 1: Upcoming Consultation -->
+          <!-- Panel 1: Live Hair & Skin Index -->
           <div class="dash-panel" id="upcoming" style="display: block;">
             <div class="dash-card">
               <div class="dash-card-header">
                 <div>
-                  <span class="eyebrow" style="margin-bottom: 4px;">NEXT APPOINTMENT</span>
-                  <h3>Picosecond Laser Protocol (Session 2 of 3)</h3>
+                  <span class="eyebrow" style="margin-bottom: 4px;">LIVE MARKET INDEX</span>
+                  <h3>Top Hair Care & Skin Active Growth</h3>
                 </div>
-                <span class="card-category" style="position: static; background: var(--bg-secondary);">CONFIRMED</span>
+                <span class="card-category" style="position: static; background: var(--bg-secondary);">UPDATED TODAY</span>
               </div>
 
               <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 30px; padding-bottom: 24px; border-bottom: 1px solid var(--border-color);">
                 <div>
-                  <span style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">DATE & TIME</span>
-                  <p style="font-family: var(--font-serif); font-size: 1.25rem; margin: 4px 0 0;">October 18, 2026 • 14:30 GMT</p>
+                  <span style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">TOP HAIR ACTIVE</span>
+                  <p style="font-family: var(--font-serif); font-size: 1.25rem; margin: 4px 0 0;">Polynucleotides (+342%)</p>
                 </div>
                 <div>
-                  <span style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">LOCATION</span>
-                  <p style="font-family: var(--font-serif); font-size: 1.25rem; margin: 4px 0 0;">Paris Atelier • Suite 04</p>
+                  <span style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">TOP SKIN ACTIVE</span>
+                  <p style="font-family: var(--font-serif); font-size: 1.25rem; margin: 4px 0 0;">Plant Ceramides (+215%)</p>
                 </div>
                 <div>
-                  <span style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">DERMATOLOGIST</span>
-                  <p style="font-family: var(--font-serif); font-size: 1.25rem; margin: 4px 0 0;">Dr. Hélène Vance, MD</p>
+                  <span style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">CLEAN BEAUTY</span>
+                  <p style="font-family: var(--font-serif); font-size: 1.25rem; margin: 4px 0 0;">Rosemary Hair Oil (+195%)</p>
                 </div>
               </div>
 
-              <h4>Pre-Procedure Guidelines</h4>
+              <h4>Simple Recommendations</h4>
               <div style="margin-top: 14px; display: flex; flex-direction: column; gap: 10px;">
-                <div style="display: flex; align-items: center; gap: 12px; font-size: 0.9rem; color: var(--text-muted);">
-                  <span style="color: var(--accent);">✓</span> Discontinue active retinoids and direct AHA acids 72 hours prior.
+                <div style="display: flex; align-items: center; gap: 12px; font-size: 0.95rem; color: var(--text-muted);">
+                  <span style="color: var(--accent);">✓</span> Scalp drop serums show the highest consumer search growth this season.
                 </div>
-                <div style="display: flex; align-items: center; gap: 12px; font-size: 0.9rem; color: var(--text-muted);">
-                  <span style="color: var(--accent);">✓</span> Apply broad-spectrum mineral SPF 50+ when outdoors.
+                <div style="display: flex; align-items: center; gap: 12px; font-size: 0.95rem; color: var(--text-muted);">
+                  <span style="color: var(--accent);">✓</span> Ceramide barrier creams are replacing harsh peeling treatments.
                 </div>
-                <div style="display: flex; align-items: center; gap: 12px; font-size: 0.9rem; color: var(--text-muted);">
-                  <span style="color: var(--accent);">✓</span> Arrive 15 minutes early for pre-cooling topical gel application.
+                <div style="display: flex; align-items: center; gap: 12px; font-size: 0.95rem; color: var(--text-muted);">
+                  <span style="color: var(--accent);">✓</span> Gentle light lasers are leading non-thermal skin glow trends.
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Panel 2: Saved Protocols -->
+          <!-- Panel 2: Saved Reports -->
           <div class="dash-panel" id="saved" style="display: none;">
             <div class="dash-card">
-              <div class="dash-card-header">
-                <h3>Curated Treatment Protocols</h3>
-              </div>
-
-              <div class="gallery-grid-2">
-                <div class="gallery-card">
-                  <div class="card-media" style="padding-bottom: 70%;">
-                    <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=600&q=85" alt="Picosecond Laser">
-                  </div>
-                  <div class="card-content">
-                    <div class="card-code">ACTIVE PROTOCOL</div>
-                    <h3>Picosecond Melanin Erasure</h3>
-                    <p>Current 3-session series targeting malar hyperpigmentation.</p>
-                    <a href="treatment-detail.html" class="link-arrow">View Protocol →</a>
-                  </div>
+              <h3>Saved Articles & Ingredient Reports</h3>
+              <p style="color: var(--text-muted); margin-top: 10px;">You have 2 saved reports in your library.</p>
+              <div style="margin-top: 20px; display: flex; flex-direction: column; gap: 16px;">
+                <div style="padding: 16px; background: var(--bg-secondary); border: 1px solid var(--border-color);">
+                  <strong>Scalp Serums & Thick Hair Growth Guide</strong>
+                  <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;">Saved on October 2, 2026</p>
                 </div>
-
-                <div class="gallery-card">
-                  <div class="card-media" style="padding-bottom: 70%;">
-                    <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=85" alt="Polynucleotides">
-                  </div>
-                  <div class="card-content">
-                    <div class="card-code">RECOMMENDED NEXT</div>
-                    <h3>Polynucleotide Biostimulation</h3>
-                    <p>Post-laser hydration and fibroblast vascular support.</p>
-                    <a href="ingredients.html" class="link-arrow">View Actives →</a>
-                  </div>
+                <div style="padding: 16px; background: var(--bg-secondary); border: 1px solid var(--border-color);">
+                  <strong>Plant Ceramides & Moisture Protection</strong>
+                  <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;">Saved on September 28, 2026</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Panel 3: Treatment History -->
+          <!-- Panel 3: History -->
           <div class="dash-panel" id="history" style="display: none;">
             <div class="dash-card">
-              <div class="dash-card-header">
-                <h3>Completed Clinical Log</h3>
-              </div>
-
-              <div class="timeline">
-                <div class="timeline-step">
-                  <span style="font-size: 0.75rem; color: var(--accent); letter-spacing: 0.15em;">SEPTEMBER 20, 2026</span>
-                  <h4>Picosecond Laser Session 1 (Completed)</h4>
-                  <p>Targeted 755nm wavelength pass across malar zones. Mild erythema resolved within 8 hours. Skin response rated excellent.</p>
-                </div>
-                <div class="timeline-step">
-                  <span style="font-size: 0.75rem; color: var(--accent); letter-spacing: 0.15em;">SEPTEMBER 12, 2026</span>
-                  <h4>Multispectral 3D Visia Scan & Initial Consultation</h4>
-                  <p>Baseline dermal melanin density logged at 68th percentile. Diagnostic plan formulated by Dr. Hélène Vance.</p>
-                </div>
-              </div>
+              <h3>Recent Ingredient Searches</h3>
+              <p style="color: var(--text-muted); margin-top: 10px;">Your recent search activity on our trend monitor.</p>
+              <ul style="margin-top: 16px; padding-left: 20px; color: var(--text-muted);">
+                <li>Search: "Rosemary scalp drops" — Oct 8, 2026</li>
+                <li>Search: "Ceramide skin barrier creams" — Oct 5, 2026</li>
+                <li>Search: "Peptide hair boosters" — Oct 1, 2026</li>
+              </ul>
             </div>
           </div>
 
-          <!-- Panel 4: Specialist Notes -->
+          <!-- Panel 4: Analyst Notes -->
           <div class="dash-panel" id="notes" style="display: none;">
             <div class="dash-card">
-              <div class="dash-card-header">
-                <h3>Dermatologist Clinical Notes</h3>
+              <h3>Analyst Care Notes</h3>
+              <div class="handwritten-note">
+                “Focus on consistent daily scalp drops for best hair density results.”
               </div>
-
-              <div style="background-color: var(--bg-primary); padding: 24px; border: 1px solid var(--border-color); margin-bottom: 20px;">
-                <span class="eyebrow">DR. HÉLÈNE VANCE, MD • SEP 20, 2026</span>
-                <p class="handwritten-note">"Patient exhibited optimal epidermal response to the initial 755nm picosecond pass. Sub-surface pigment breakdown is proceeding according to protocol. Recommended continuing topical lipid barrier cream twice daily."</p>
-              </div>
+              <p style="color: var(--text-muted);">Note from Dr. Hélène Vance, MD</p>
             </div>
           </div>
         </main>
@@ -219,15 +213,15 @@
     </section>
   </div>
 
-  <!-- Minimal Footer with Newsletter & 3 Social Icons -->
+  <!-- Footer -->
   <footer class="footer-editorial">
     <div class="container">
       <div class="footer-newsletter-wrap">
         <div class="newsletter-info">
-          <h3>Stay updated with <span class="script" style="color: var(--accent);">skin intelligence</span>.</h3>
-          <p>Receive our monthly research dossier on picosecond laser physics, polynucleotides, and barrier care.</p>
+          <h3>Stay updated with <span class="script" style="color: var(--accent);">live trend alerts</span>.</h3>
+          <p>Get our simple monthly email summarizing top trending cosmetics, scalp serums, and hair oils.</p>
         </div>
-        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Élixir Dermatologie Journal.'); this.reset();">
+        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Cosmetics & Hair Care Trend Monitor.'); this.reset();">
           <input type="email" class="newsletter-input" placeholder="Enter your email address..." required>
           <button type="submit" class="btn-gallery btn-accent" style="padding: 14px 28px;">Subscribe</button>
         </form>
@@ -235,16 +229,17 @@
 
       <div class="footer-minimal-nav">
         <div class="brand-logo" style="text-align: left;">
-          <a href="index.html" style="color: #fff; font-family: var(--font-script); font-size: 2rem;">Élixir Dermatologie</a>
+          <a href="index.html" style="color: #fff; font-family: var(--font-script); font-size: 2rem;">Élixir Trends</a>
+          <span style="display:block; font-size: 0.65rem; color: var(--accent); letter-spacing: 0.15em; text-transform: uppercase;">Cosmetics & Hair Care Trend Monitor</span>
         </div>
 
         <div class="footer-links-minimal">
-          <a href="index.html">Home</a>
-          <a href="treatments.html">Treatments</a>
-          <a href="results.html">Results Archive</a>
-          <a href="specialists.html">Specialists</a>
-          <a href="trends.html">Journal</a>
-          <a href="contact.html">Book Consultation</a>
+          <a href="haircare.html">Hair Care</a>
+          <a href="trends.html">Trends</a>
+          <a href="ingredients.html">Actives</a>
+          <a href="insights.html">Insights</a>
+          <a href="specialists.html">Team</a>
+          <a href="dashboard.html">Dashboard</a>
         </div>
 
         <div class="footer-social-icons">
@@ -261,7 +256,7 @@
       </div>
 
       <div class="footer-bottom">
-        <div>© <span data-year>2026</span> Élixir Dermatologie. Confidential Patient Portal.</div>
+        <div>© <span data-year>2026</span> Cosmetics & Hair Care Insights & Trend Monitor. All rights reserved.</div>
         <div>Paris • Geneva • New York</div>
       </div>
     </div>

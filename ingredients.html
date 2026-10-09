@@ -3,12 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Active Compounds Archive — Élixir Dermatologie</title>
-  <meta name="description" content="Explore our medical compound archive, biomimetic lipids, polynucleotides, and clinical TCA formulations.">
+  <title>Active Ingredients — Cosmetics & Hair Care Trend Monitor</title>
+  <meta name="description" content="A simple guide to top trending ingredients in hair care, cosmetics, plant lipids, hyaluronic hydrators, and hair density actives.">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+  <!-- Live Trend Ticker Bar -->
+  <div class="trend-ticker-bar">
+    <div class="trend-ticker-inner">
+      <div class="ticker-item">
+        <span class="pulse-dot"></span>
+        <span class="ticker-badge">INGREDIENT #01</span>
+        <strong>Ceramides & Plant Lipids:</strong> +215% Formulation Adoption
+      </div>
+      <div class="ticker-item">
+        <span class="ticker-badge">INGREDIENT #02</span>
+        <strong>Rosemary Bio-Ferments:</strong> +195% Clean Beauty Shift
+      </div>
+      <div class="ticker-item">
+        <span class="ticker-badge">INGREDIENT #03</span>
+        <strong>Hyaluronic Hydrators:</strong> Top Moisture Standard
+      </div>
+      <!-- Loop -->
+      <div class="ticker-item">
+        <span class="pulse-dot"></span>
+        <span class="ticker-badge">INGREDIENT #01</span>
+        <strong>Ceramides & Plant Lipids:</strong> +215% Formulation Adoption
+      </div>
+    </div>
+  </div>
 
   <!-- Header -->
   <header class="header-gallery">
@@ -22,20 +47,17 @@
       </button>
 
       <div class="brand-logo">
-        <a href="index.html">Élixir Dermatologie</a>
-        <span>Active Compounds</span>
+        <a href="index.html">Élixir Trends</a>
       </div>
 
       <nav class="nav-links-desktop">
         <a href="index.html">Home</a>
-        <a href="treatments.html">Treatments</a>
-        <a href="results.html">Results</a>
-        <a href="specialists.html">Specialists</a>
-        <a href="trends.html">Journal</a>
+        <a href="haircare.html">Hair Care</a>
+        <a href="trends.html">Trends</a>
+        <a href="ingredients.html" class="active">Actives</a>
+        <a href="insights.html">Insights</a>
         <a href="contact.html">Contact</a>
       </nav>
-
-      <a href="contact.html" class="header-cta">Book Consultation</a>
     </div>
   </header>
 
@@ -44,7 +66,7 @@
     <div class="container">
       <div class="overlay-header">
         <div class="brand-logo" style="text-align: left;">
-          <a href="index.html" style="color: #fff; font-family: var(--font-script);">Élixir Dermatologie</a>
+          <a href="index.html" style="color: #fff; font-family: var(--font-script);">Élixir Trends</a>
         </div>
         <button class="close-trigger" aria-label="Close Menu">
           <span>Close</span> ✕
@@ -54,52 +76,147 @@
       <div class="overlay-body">
         <nav class="overlay-nav">
           <a href="index.html"><span class="num">01</span> Home</a>
-          <a href="treatments.html"><span class="num">02</span> Treatments</a>
-          <a href="results.html"><span class="num">03</span> Results</a>
-          <a href="specialists.html"><span class="num">04</span> Specialists</a>
-          <a href="trends.html"><span class="num">05</span> Journal</a>
+          <a href="haircare.html"><span class="num">02</span> Hair Care</a>
+          <a href="trends.html"><span class="num">03</span> Trends</a>
+          <a href="ingredients.html" class="active"><span class="num">04</span> Actives</a>
+          <a href="insights.html"><span class="num">05</span> Insights</a>
           <a href="contact.html"><span class="num">06</span> Contact</a>
         </nav>
       </div>
     </div>
-  </header>
+  </div>
 
   <div class="page-wrapper">
+    <!-- Page Header -->
     <section class="section-padding-sm border-bottom">
       <div class="container" style="text-align: center; max-width: 800px;">
-        <span class="eyebrow">FORMULATIVE SCIENCE</span>
-        <h1>Active Compounds & <span class="script">Biomimetic Molecules</span></h1>
-        <p class="lead">An index of high-purity medical actives, sterile hyaluronic cross-links, and cellular growth factors utilized across our treatment protocols.</p>
+        <span class="eyebrow">INGREDIENT INTELLIGENCE</span>
+        <h1>Key Ingredients in <span class="script">Cosmetics & Hair Care</span></h1>
+        <p class="lead">A simple guide to popular active ingredients, plant extracts, and hydration boosters used in modern hair products and skincare formulations.</p>
       </div>
     </section>
 
+    <!-- Ingredients Grid -->
     <section class="section-padding">
       <div class="container">
         <div class="gallery-grid">
+
           <div class="gallery-card">
             <div class="card-content">
-              <div class="card-code">MOLECULE #01</div>
-              <h3>Purified Polynucleotides (PDRN)</h3>
-              <p>DNA fractions derived from trout or salmon gonadal tissue that bind to A2A adenosine receptors, stimulating collagen I synthesis and reducing cytokine inflammation.</p>
-              <a href="treatments.html" class="link-arrow">View Associated Treatments →</a>
+              <div class="card-code">INGREDIENT #01</div>
+              <h3>Hair Density Actives (PDRN)</h3>
+              <p>Natural DNA building blocks that help nourish scalp roots, reduce inflammation, and encourage hair to grow fuller and thicker.</p>
+              <div class="card-footer">
+                <a href="haircare.html" class="link-arrow">Hair Care</a>
+              </div>
             </div>
           </div>
 
           <div class="gallery-card">
             <div class="card-content">
-              <div class="card-code">MOLECULE #02</div>
-              <h3>Biphasic Trichloroacetic Acid (35%)</h3>
-              <p>A bio-stimulating chemical compound that bypasses surface corneocytes to induce superficial papillary dermis protein denaturation without epidermal peeling.</p>
-              <a href="treatments.html" class="link-arrow">View Associated Treatments →</a>
+              <div class="card-code">INGREDIENT #02</div>
+              <h3>Plant Ceramides & Lipids</h3>
+              <p>Skin-identical moisture protectors that seal in hydration, calm dry skin, and guard against harsh daily environments.</p>
+              <div class="card-footer">
+                <a href="trends.html" class="link-arrow">Trends</a>
+              </div>
             </div>
           </div>
 
           <div class="gallery-card">
             <div class="card-content">
-              <div class="card-code">MOLECULE #03</div>
-              <h3>Cross-Linked Hyaluronic Hydrogel</h3>
-              <p>Sterile BDDE cross-linked viscoelastic gel calibrated to match subcutaneous adipose density for long-term structural lifting.</p>
-              <a href="treatments.html" class="link-arrow">View Associated Treatments →</a>
+              <div class="card-code">INGREDIENT #03</div>
+              <h3>Hyaluronic Acid Hydrators</h3>
+              <p>Deeply moisturizing water-binding gels that keep skin plump, smooth fine lines, and give hair a soft, silky shine.</p>
+              <div class="card-footer">
+                <a href="treatments.html" class="link-arrow">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-card">
+            <div class="card-content">
+              <div class="card-code">INGREDIENT #04</div>
+              <h3>Rosemary & Botanical Oils</h3>
+              <p>Cold-pressed herbal oils that soothe itchy scalps, strengthen weak strands, and add natural shine without heavy grease.</p>
+              <div class="card-footer">
+                <a href="haircare.html" class="link-arrow">Hair Care</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-card">
+            <div class="card-content">
+              <div class="card-code">INGREDIENT #05</div>
+              <h3>Niacinamide Vitamin B3</h3>
+              <p>Essential skin vitamin that brightens uneven dark spots, minimizes large pores, and strengthens fragile moisture barriers.</p>
+              <div class="card-footer">
+                <a href="trends.html" class="link-arrow">Trends</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-card">
+            <div class="card-content">
+              <div class="card-code">INGREDIENT #06</div>
+              <h3>Copper Peptides</h3>
+              <p>Amino acid protein chains that support healthy skin collagen and help reinforce hair follicle strength against thinning.</p>
+              <div class="card-footer">
+                <a href="insights.html" class="link-arrow">Insights</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Unique Section: Bio-Active Ingredient Synergy & Compatibility Matrix -->
+    <section class="section-padding bg-secondary border-bottom">
+      <div class="container">
+        <div style="text-align: center; max-width: 780px; margin: 0 auto 10px;">
+          <span class="eyebrow">FORMULATION SYNERGY</span>
+          <h2>Active Ingredient <span class="script">Pairing & Synergy Matrix</span>.</h2>
+          <p class="lead">Discover how combining key cosmetic active ingredients unlocks enhanced scalp bioavailability, barrier repair, and hair density stimulation.</p>
+        </div>
+
+        <div class="synergy-matrix-grid">
+          <div class="synergy-card">
+            <div class="synergy-pair-header">SYNERGY PAIRING #01</div>
+            <h3>Rosemary Ferment + Copper Peptides</h3>
+            <p>Botanical antioxidant extracts combined with amino acid chains to stimulate scalp circulation while reinforcing hair root anchor strength.</p>
+            <div class="synergy-box">
+              <span class="synergy-box-label">Primary Target</span>
+              <p class="synergy-box-text">Scalp Root Activation & Follicle Density</p>
+            </div>
+            <div class="replaces-tag">
+              <span>Replaces:</span> Heavy synthetic growth stimulants & harsh alcohol tonics
+            </div>
+          </div>
+
+          <div class="synergy-card">
+            <div class="synergy-pair-header">SYNERGY PAIRING #02</div>
+            <h3>Plant Ceramides + Hyaluronic Acid</h3>
+            <p>Biomimetic skin lipids paired with multi-weight water binders to restore natural scalp barrier moisture without pore congestion.</p>
+            <div class="synergy-box">
+              <span class="synergy-box-label">Primary Target</span>
+              <p class="synergy-box-text">24h Scalp Hydration & Flake Protection</p>
+            </div>
+            <div class="replaces-tag">
+              <span>Replaces:</span> Heavy petroleum waxes & greasy mineral oil bases
+            </div>
+          </div>
+
+          <div class="synergy-card">
+            <div class="synergy-pair-header">SYNERGY PAIRING #03</div>
+            <h3>Niacinamide B3 + Plant PDRN</h3>
+            <p>Vitamin B3 cell-renewers coupled with natural DNA building blocks to calm scalp inflammation and soothe redness after styling.</p>
+            <div class="synergy-box">
+              <span class="synergy-box-label">Primary Target</span>
+              <p class="synergy-box-text">Scalp Soothing & Skin Micro-Barrier Defense</p>
+            </div>
+            <div class="replaces-tag">
+              <span>Replaces:</span> Irritating artificial fragrances & harsh sulfates
             </div>
           </div>
         </div>
@@ -107,15 +224,16 @@
     </section>
   </div>
 
-  <!-- Minimal Footer with Newsletter & 3 Social Icons -->
+
+  <!-- Footer -->
   <footer class="footer-editorial">
     <div class="container">
       <div class="footer-newsletter-wrap">
         <div class="newsletter-info">
-          <h3>Stay updated with <span class="script" style="color: var(--accent);">skin intelligence</span>.</h3>
-          <p>Receive our monthly research dossier on picosecond laser physics, polynucleotides, and barrier care.</p>
+          <h3>Stay updated with <span class="script" style="color: var(--accent);">ingredient trends</span>.</h3>
+          <p>Get our monthly simple summary of clean ingredients, active peptides, and natural hair oils.</p>
         </div>
-        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Élixir Dermatologie Journal.'); this.reset();">
+        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Cosmetics & Hair Care Trend Monitor.'); this.reset();">
           <input type="email" class="newsletter-input" placeholder="Enter your email address..." required>
           <button type="submit" class="btn-gallery btn-accent" style="padding: 14px 28px;">Subscribe</button>
         </form>
@@ -123,16 +241,16 @@
 
       <div class="footer-minimal-nav">
         <div class="brand-logo" style="text-align: left;">
-          <a href="index.html" style="color: #fff; font-family: var(--font-script); font-size: 2rem;">Élixir Dermatologie</a>
+          <a href="index.html" style="color: #fff; font-family: var(--font-script); font-size: 2rem;">Élixir Trends</a>
+          <span style="display:block; font-size: 0.65rem; color: var(--accent); letter-spacing: 0.15em; text-transform: uppercase;">Cosmetics & Hair Care Trend Monitor</span>
         </div>
 
         <div class="footer-links-minimal">
-          <a href="index.html">Home</a>
-          <a href="treatments.html">Treatments</a>
-          <a href="results.html">Results Archive</a>
-          <a href="specialists.html">Specialists</a>
-          <a href="trends.html">Journal</a>
-          <a href="contact.html">Book Consultation</a>
+          <a href="haircare.html">Hair Care</a>
+          <a href="trends.html">Trends</a>
+          <a href="ingredients.html">Actives</a>
+          <a href="insights.html">Insights</a>
+          <a href="contact.html">Contact</a>
         </div>
 
         <div class="footer-social-icons">
@@ -149,11 +267,16 @@
       </div>
 
       <div class="footer-bottom">
-        <div>© <span data-year>2026</span> Élixir Dermatologie. All rights reserved.</div>
+        <div>© <span data-year>2026</span> Cosmetics & Hair Care Insights & Trend Monitor. All rights reserved.</div>
         <div>Paris • Geneva • New York</div>
       </div>
     </div>
-  </footer>
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
 
   <script src="js/main.js"></script>
 </body>

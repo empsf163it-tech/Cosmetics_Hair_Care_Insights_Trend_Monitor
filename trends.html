@@ -3,12 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Editorial Journal & Research Papers — Élixir Dermatologie</title>
-  <meta name="description" content="In-depth dermatological clinical papers, laser acoustic physics analysis, and biological lipid barrier restoration essays.">
+  <title>Cosmetic & Hair Care Trends Journal — Trend Monitor</title>
+  <meta name="description" content="Easy-to-read reports and trend analysis on new hair care formulations, gentle skin lasers, and natural cosmetic ingredients.">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+  <!-- Live Trend Ticker Bar -->
+  <div class="trend-ticker-bar">
+    <div class="trend-ticker-inner">
+      <div class="ticker-item">
+        <span class="pulse-dot"></span>
+        <span class="ticker-badge">TREND REPORT #01</span>
+        <strong>Light Laser Glow:</strong> +290% Popularity
+      </div>
+      <div class="ticker-item">
+        <span class="ticker-badge">TREND REPORT #02</span>
+        <strong>Natural Hair Serums:</strong> +342% Consumer Growth
+      </div>
+      <div class="ticker-item">
+        <span class="ticker-badge">TREND REPORT #03</span>
+        <strong>Barrier Repair Creams:</strong> +215% Formulation Adoption
+      </div>
+      <!-- Loop -->
+      <div class="ticker-item">
+        <span class="pulse-dot"></span>
+        <span class="ticker-badge">TREND REPORT #01</span>
+        <strong>Light Laser Glow:</strong> +290% Popularity
+      </div>
+    </div>
+  </div>
 
   <!-- Header -->
   <header class="header-gallery">
@@ -22,28 +47,26 @@
       </button>
 
       <div class="brand-logo">
-        <a href="index.html">Élixir Dermatologie</a>
+        <a href="index.html">Élixir Trends</a>
       </div>
 
       <nav class="nav-links-desktop">
         <a href="index.html">Home</a>
-        <a href="treatments.html">Treatments</a>
-        <a href="results.html">Results</a>
-        <a href="specialists.html">Specialists</a>
-        <a href="trends.html" class="active">Journal</a>
+        <a href="haircare.html">Hair Care</a>
+        <a href="trends.html" class="active">Trends</a>
+        <a href="ingredients.html">Actives</a>
+        <a href="insights.html">Insights</a>
         <a href="contact.html">Contact</a>
       </nav>
-
-      <a href="contact.html" class="header-cta">Book Consultation</a>
     </div>
   </header>
 
-  <!-- Navigation Overlay -->
+  <!-- Overlay -->
   <div class="gallery-overlay" id="menuOverlay">
     <div class="container">
       <div class="overlay-header">
         <div class="brand-logo" style="text-align: left;">
-          <a href="index.html" style="color: #fff; font-family: var(--font-script);">Élixir Dermatologie</a>
+          <a href="index.html" style="color: #fff; font-family: var(--font-script);">Élixir Trends</a>
         </div>
         <button class="close-trigger" aria-label="Close Menu">
           <span>Close</span> ✕
@@ -53,10 +76,10 @@
       <div class="overlay-body">
         <nav class="overlay-nav">
           <a href="index.html"><span class="num">01</span> Home</a>
-          <a href="treatments.html"><span class="num">02</span> Treatments</a>
-          <a href="results.html"><span class="num">03</span> Results</a>
-          <a href="specialists.html"><span class="num">04</span> Specialists</a>
-          <a href="trends.html" class="active"><span class="num">05</span> Journal</a>
+          <a href="haircare.html"><span class="num">02</span> Hair Care</a>
+          <a href="trends.html" class="active"><span class="num">03</span> Trends</a>
+          <a href="ingredients.html"><span class="num">04</span> Actives</a>
+          <a href="insights.html"><span class="num">05</span> Insights</a>
           <a href="contact.html"><span class="num">06</span> Contact</a>
         </nav>
       </div>
@@ -67,172 +90,189 @@
     <!-- Page Header -->
     <section class="section-padding-sm border-bottom">
       <div class="container" style="text-align: center; max-width: 800px;">
-        <span class="eyebrow">DERMATOLOGY RESEARCH & ESSAYS</span>
-        <h1>Editorial Journal & <span class="script">Skin Signals</span></h1>
-        <p class="lead">Peer-reviewed insights, acoustic pulse energy physics, and cellular longevity research published by our senior dermatologists and lab fellows.</p>
+        <span class="eyebrow">TREND REPORTS & ARTICLES</span>
+        <h1>Cosmetic & Hair Care <span class="script">Trend Journal</span></h1>
+        <p class="lead">Clear, easy-to-understand articles on new beauty innovations, scalp care breakthroughs, and clean skincare formulations.</p>
       </div>
     </section>
 
-    <!-- Featured Research Paper Hero -->
+    <!-- Featured Paper -->
     <section class="section-padding border-bottom">
       <div class="container">
         <div class="spotlight-grid">
           <div class="spotlight-media" style="border: 1px solid var(--border-color); border-radius: 4px;">
-            <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=1200&q=85" alt="Picosecond Laser Research">
+            <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=1200&q=85" alt="Gentle Laser Skin Care">
           </div>
 
           <div class="spotlight-content">
-            <span class="eyebrow">FEATURED CLINICAL PAPER • ISSUE #42</span>
-            <h2>Picosecond Shockwave Physics in <span class="script">Refractory Melasma</span></h2>
-            <p style="color: var(--text-muted); margin-bottom: 20px; line-height: 1.8;">A 5-year retrospective analysis evaluating 450nm acoustic pressure waves against conventional Q-switched thermal lasers. Demonstrates 92% melanin clearance without rebound post-inflammatory hyperpigmentation (PIH).</p>
+            <span class="eyebrow">FEATURED ARTICLE • ISSUE #42</span>
+            <h2>Gentle Laser Glow for <span class="script">Clear & Even Skin</span></h2>
+            <p style="color: var(--text-muted); margin-bottom: 20px; line-height: 1.8;">Fast light energy breaks down dark spots and sun damage without burning or peeling the skin. Helps bring back smooth texture and natural skin radiance quickly.</p>
 
             <div style="background-color: var(--bg-secondary); padding: 20px; border-left: 3px solid var(--accent); margin-bottom: 25px;">
-              <strong style="font-family: var(--font-serif); font-size: 1.1rem; display: block; margin-bottom: 6px;">Key Research Finding:</strong>
-              <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0;">Photomechanical stress ruptures dermal melanosomes into micro-particles digestible by macrophages without thermal heating of surrounding epidermal basement membranes.</p>
+              <strong style="font-family: var(--font-serif); font-size: 1.1rem; display: block; margin-bottom: 6px;">Key Key Finding:</strong>
+              <p style="font-size: 0.95rem; color: var(--text-muted); margin: 0;">Gentle sound waves shatter skin pigment into tiny pieces that clear away naturally without causing skin redness.</p>
             </div>
 
-            <div style="display: flex; gap: 24px; font-size: 0.8rem; color: var(--text-muted); align-items: center; flex-wrap: wrap;">
+            <div style="display: flex; gap: 24px; font-size: 0.85rem; color: var(--text-muted); align-items: center; flex-wrap: wrap;">
               <span><strong>Author:</strong> Dr. Hélène Vance, MD</span>
               <span><strong>Published:</strong> September 2026</span>
-              <span><strong>Read Time:</strong> 12 Min Read</span>
+              <span><strong>Read Time:</strong> 5 Min Read</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Journal Research Grid -->
+    <!-- Article Grid -->
     <section class="section-padding">
       <div class="container">
         <div style="margin-bottom: 40px; text-align: center;">
-          <span class="eyebrow">RESEARCH ARCHIVE</span>
-          <h2>Clinical Papers & Architectural Essays</h2>
+          <span class="eyebrow">TREND REPORTS</span>
+          <h2>Latest Beauty & Hair Care Insights</h2>
         </div>
 
         <div class="gallery-grid">
-          <!-- Essay 1 -->
+
           <div class="gallery-card">
             <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=85" alt="Polynucleotides">
+              <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=85" alt="Hair care serums">
             </div>
             <div class="card-content">
-              <div class="card-code">ESSAY #01 • CELLULAR LONGEVITY</div>
-              <h3>Polynucleotide PDRN & Matrix Synthesis</h3>
-              <p>How purified salmon DNA fragments bind to A2A purinergic receptors, triggering micro-vascular angiogenesis and rapid collagen type III synthesis in aged dermis.</p>
+              <div class="card-code">ARTICLE #01 • HAIR CARE</div>
+              <h3>Scalp Serums & Thick Hair Growth</h3>
+              <p>How daily scalp drops with natural vitamins strengthen thin strands and keep hair roots healthy and full.</p>
               
               <div style="margin: 15px 0; font-size: 0.85rem; color: var(--text-muted); border-top: 1px solid var(--border-color); padding-top: 12px;">
-                <strong>Clinical Takeaway:</strong> 42% increase in dermal fibroblast density within 30 days post-injection.
+                <strong>Simple Result:</strong> 42% thicker hair feeling after 30 days of daily use.
               </div>
 
               <div class="card-footer">
-                <span>By Dr. Julian Mercer, PhD</span>
-                <a href="ingredients.html" class="link-arrow">View Compound Details →</a>
+                <span>By Dr. Julian Mercer</span>
+                <a href="haircare.html" class="link-arrow">Hair Care</a>
               </div>
             </div>
           </div>
 
-          <!-- Essay 2 -->
           <div class="gallery-card">
             <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=85" alt="Barrier Lipid Health">
+              <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=85" alt="Moisture barrier repair">
             </div>
             <div class="card-content">
-              <div class="card-code">ESSAY #02 • BARRIER BIOLOGY</div>
-              <h3>The Fallacy of Chronic Acid Exfoliation</h3>
-              <p>Examining the molecular damage caused by daily 10% AHA/BHA overuse. Why acid stripping depletes intercellular ceramides and accelerates chronic low-grade skin inflammation.</p>
+              <div class="card-code">ARTICLE #02 • SKIN CARE</div>
+              <h3>Ceramides & Daily Moisture Protection</h3>
+              <p>Why skin-identical creams help lock in water, repair dry skin barriers, and calm redness caused by dry weather.</p>
               
               <div style="margin: 15px 0; font-size: 0.85rem; color: var(--text-muted); border-top: 1px solid var(--border-color); padding-top: 12px;">
-                <strong>Clinical Takeaway:</strong> Preserving 3:1:1 physiological lipid ratios prevents transepidermal water loss.
+                <strong>Simple Result:</strong> 24-hour hydration without heavy or oily residue.
               </div>
 
               <div class="card-footer">
-                <span>By Dr. Camille Laurent, MD</span>
-                <a href="about.html" class="link-arrow">Read Philosophy →</a>
+                <span>By Clara Laurent</span>
+                <a href="ingredients.html" class="link-arrow">Actives</a>
               </div>
             </div>
           </div>
 
-          <!-- Essay 3 -->
           <div class="gallery-card">
             <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=800&q=85" alt="Visia Multispectral Diagnostics">
+              <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=85" alt="Clean beauty">
             </div>
             <div class="card-content">
-              <div class="card-code">ESSAY #03 • DIAGNOSTIC PHYSICS</div>
-              <h3>Multispectral Visia 7 Skin Profiling</h3>
-              <p>Understanding cross-polarized UV photography for sub-surface porphyrin quantification and early deep-layer dermal spot detection before visible eruption.</p>
+              <div class="card-code">ARTICLE #03 • CLEAN BEAUTY</div>
+              <h3>Rosemary & Plant Oil Trends</h3>
+              <p>How clean botanical oils protect hair from heat damage and keep scalp skin calm and comfortable.</p>
               
               <div style="margin: 15px 0; font-size: 0.85rem; color: var(--text-muted); border-top: 1px solid var(--border-color); padding-top: 12px;">
-                <strong>Clinical Takeaway:</strong> Sub-surface UV mapping predicts hyperpigmentation 3 to 5 years before surface appearance.
+                <strong>Simple Result:</strong> Smooth, shiny hair with 95% less breakage.
               </div>
 
               <div class="card-footer">
-                <span>By Dr. Sophia Al-Mansoor, MD</span>
-                <a href="insights.html" class="link-arrow">Explore 3D Diagnostics →</a>
+                <span>By Dr. Vance</span>
+                <a href="insights.html" class="link-arrow">Insights</a>
               </div>
             </div>
           </div>
 
-          <!-- Essay 4 -->
-          <div class="gallery-card">
-            <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=85" alt="Radiofrequency Collagen Tightening">
-            </div>
-            <div class="card-content">
-              <div class="card-code">ESSAY #04 • THERMAL REMODELING</div>
-              <h3>Insulated Needles in Sub-Dermal RF</h3>
-              <p>Why gold-coated insulated micro-needles protect delicate epidermal melanocytes while delivering 65°C thermal energy directly to the reticular dermis.</p>
-              
-              <div style="margin: 15px 0; font-size: 0.85rem; color: var(--text-muted); border-top: 1px solid var(--border-color); padding-top: 12px;">
-                <strong>Clinical Takeaway:</strong> Eliminates surface scabbing while tightening deep facial fascial planes.
-              </div>
+        </div>
+      </div>
+    </section>
 
-              <div class="card-footer">
-                <span>By Dr. Julian Mercer, PhD</span>
-                <a href="treatments.html" class="link-arrow">Explore RF Protocol →</a>
-              </div>
-            </div>
-          </div>
+    <!-- Unique Section: 2026 Cosmetic Innovation Index & Trend Velocity Heatmap -->
+    <section class="section-padding bg-secondary border-bottom">
+      <div class="container">
+        <div style="text-align: center; max-width: 780px; margin: 0 auto 10px;">
+          <span class="eyebrow">2026 INNOVATION INDEX</span>
+          <h2>Beauty & Formulation <span class="script">Trend Velocity Index</span>.</h2>
+          <p class="lead">A data-driven snapshot tracking search volume growth, consumer demand velocity, and adoption stage across emerging cosmetic categories.</p>
+        </div>
 
-          <!-- Essay 5 -->
-          <div class="gallery-card">
-            <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=85" alt="Scalp Trichology Regeneration">
+        <div class="trend-matrix-container">
+          <div class="trend-matrix-card">
+            <div class="matrix-title-wrap">
+              <h3>Scalp Microbiome Serums</h3>
+              <p>Fermented botanical solutions targeting root scalp equilibrium and follicle nourishment.</p>
             </div>
-            <div class="card-content">
-              <div class="card-code">ESSAY #05 • TRICHOLOGY CARE</div>
-              <h3>Scalp Micro-Vascularization & Hair Growth</h3>
-              <p>Evaluating peptide micro-injections and low-level laser therapy (LLLT) in reversing early androgenetic follicular miniaturization.</p>
-              
-              <div style="margin: 15px 0; font-size: 0.85rem; color: var(--text-muted); border-top: 1px solid var(--border-color); padding-top: 12px;">
-                <strong>Clinical Takeaway:</strong> 34% follicle shaft diameter expansion over a 16-week treatment cycle.
-              </div>
-
-              <div class="card-footer">
-                <span>By Dr. Camille Laurent, MD</span>
-                <a href="haircare.html" class="link-arrow">View Trichology Page →</a>
-              </div>
+            <div>
+              <span class="matrix-badge-status badge-surge">Mainstream Surge</span>
+            </div>
+            <div class="matrix-benefit-text">
+              Target Benefit: Scalp soothing & non-greasy hydration
+            </div>
+            <div class="matrix-velocity-meter">
+              <span class="matrix-velocity-val">+342%</span>
+              <span class="matrix-velocity-lbl">YoY Search Velocity</span>
             </div>
           </div>
 
-          <!-- Essay 6 -->
-          <div class="gallery-card">
-            <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=85" alt="Biomimetic Lipid Formulations">
+          <div class="trend-matrix-card">
+            <div class="matrix-title-wrap">
+              <h3>Ceramide Barrier Repair Creams</h3>
+              <p>Lipid-replenishing moisture formulas designed for barrier recovery and urban skin defense.</p>
             </div>
-            <div class="card-content">
-              <div class="card-code">ESSAY #06 • FORMULATION SCIENCE</div>
-              <h3>Lamellar Emulsion Lipid Carrier Systems</h3>
-              <p>How lipid bilayers mimicking natural stratum corneum architecture deliver bioactive ceramides and phytosphingosine deep into cellular junctions.</p>
-              
-              <div style="margin: 15px 0; font-size: 0.85rem; color: var(--text-muted); border-top: 1px solid var(--border-color); padding-top: 12px;">
-                <strong>Clinical Takeaway:</strong> Sustained 24-hour hydration without pore occlusive petrolatum.
-              </div>
+            <div>
+              <span class="matrix-badge-status badge-surge">Rapid Adoption</span>
+            </div>
+            <div class="matrix-benefit-text">
+              Target Benefit: 24h moisture seal & red calm relief
+            </div>
+            <div class="matrix-velocity-meter">
+              <span class="matrix-velocity-val">+215%</span>
+              <span class="matrix-velocity-lbl">Formulation Adoption</span>
+            </div>
+          </div>
 
-              <div class="card-footer">
-                <span>By Dr. Hélène Vance, MD</span>
-                <a href="ingredients.html" class="link-arrow">View Ingredients Index →</a>
-              </div>
+          <div class="trend-matrix-card">
+            <div class="matrix-title-wrap">
+              <h3>Rosemary & Peptide Bio-Oils</h3>
+              <p>Cold-pressed herbal elixirs blended with copper peptides for strand tensile strength.</p>
+            </div>
+            <div>
+              <span class="matrix-badge-status">Lab Breakthrough</span>
+            </div>
+            <div class="matrix-benefit-text">
+              Target Benefit: Reduced breakage & natural strand gloss
+            </div>
+            <div class="matrix-velocity-meter">
+              <span class="matrix-velocity-val">+195%</span>
+              <span class="matrix-velocity-lbl">Clean Beauty Shift</span>
+            </div>
+          </div>
+
+          <div class="trend-matrix-card">
+            <div class="matrix-title-wrap">
+              <h3>Exfoliating Scalp Scrubs</h3>
+              <p>Gentle micro-grain exfoliants clearing product residue without hair fiber abrasion.</p>
+            </div>
+            <div>
+              <span class="matrix-badge-status">Steady Growth</span>
+            </div>
+            <div class="matrix-benefit-text">
+              Target Benefit: Buildup removal & root breathability
+            </div>
+            <div class="matrix-velocity-meter">
+              <span class="matrix-velocity-val">+180%</span>
+              <span class="matrix-velocity-lbl">Market Volume Shift</span>
             </div>
           </div>
         </div>
@@ -240,15 +280,16 @@
     </section>
   </div>
 
-  <!-- Minimal Footer with Newsletter & 3 Social Icons -->
+
+  <!-- Footer -->
   <footer class="footer-editorial">
     <div class="container">
       <div class="footer-newsletter-wrap">
         <div class="newsletter-info">
-          <h3>Stay updated with <span class="script" style="color: var(--accent);">skin intelligence</span>.</h3>
-          <p>Receive our monthly research dossier on picosecond laser physics, polynucleotides, and barrier care.</p>
+          <h3>Stay updated with <span class="script" style="color: var(--accent);">beauty & hair articles</span>.</h3>
+          <p>Get our simple monthly email summarizing top trending cosmetics, scalp serums, and hair oils.</p>
         </div>
-        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Élixir Dermatologie Journal.'); this.reset();">
+        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Cosmetics & Hair Care Trend Journal.'); this.reset();">
           <input type="email" class="newsletter-input" placeholder="Enter your email address..." required>
           <button type="submit" class="btn-gallery btn-accent" style="padding: 14px 28px;">Subscribe</button>
         </form>
@@ -256,16 +297,16 @@
 
       <div class="footer-minimal-nav">
         <div class="brand-logo" style="text-align: left;">
-          <a href="index.html" style="color: #fff; font-family: var(--font-script); font-size: 2rem;">Élixir Dermatologie</a>
+          <a href="index.html" style="color: #fff; font-family: var(--font-script); font-size: 2rem;">Élixir Trends</a>
+          <span style="display:block; font-size: 0.65rem; color: var(--accent); letter-spacing: 0.15em; text-transform: uppercase;">Cosmetics & Hair Care Trend Monitor</span>
         </div>
 
         <div class="footer-links-minimal">
-          <a href="index.html">Home</a>
-          <a href="treatments.html">Treatments</a>
-          <a href="results.html">Results Archive</a>
-          <a href="specialists.html">Specialists</a>
-          <a href="trends.html" class="active">Journal</a>
-          <a href="contact.html">Book Consultation</a>
+          <a href="haircare.html">Hair Care</a>
+          <a href="trends.html">Trends</a>
+          <a href="ingredients.html">Actives</a>
+          <a href="insights.html">Insights</a>
+          <a href="contact.html">Contact</a>
         </div>
 
         <div class="footer-social-icons">
@@ -282,11 +323,16 @@
       </div>
 
       <div class="footer-bottom">
-        <div>© <span data-year>2026</span> Élixir Dermatologie. All rights reserved.</div>
+        <div>© <span data-year>2026</span> Cosmetics & Hair Care Insights & Trend Monitor. All rights reserved.</div>
         <div>Paris • Geneva • New York</div>
       </div>
     </div>
-  </footer>
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
 
   <script src="js/main.js"></script>
 </body>

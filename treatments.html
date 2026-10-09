@@ -3,12 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Treatments Collection — Élixir Dermatologie</title>
-  <meta name="description" content="Explore our complete collection of medical dermatological treatments, laser photo-rejuvenation, cellular therapies, and clinical peels.">
+  <title>Care Methods & Formulation Guides — Trend Monitor</title>
+  <meta name="description" content="Explore simple care methods for hair density, skin hydration, natural plant oils, and gentle glow routines.">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+  <!-- Live Trend Ticker Bar -->
+  <div class="trend-ticker-bar">
+    <div class="trend-ticker-inner">
+      <div class="ticker-item">
+        <span class="pulse-dot"></span>
+        <span class="ticker-badge">CARE METHODS</span>
+        <strong>Scalp Drops & Serums:</strong> Simple Daily Routine
+      </div>
+      <div class="ticker-item">
+        <span class="ticker-badge">CARE METHODS</span>
+        <strong>Ceramide Barrier Creams:</strong> Deep Moisture Shield
+      </div>
+      <!-- Loop -->
+      <div class="ticker-item">
+        <span class="pulse-dot"></span>
+        <span class="ticker-badge">CARE METHODS</span>
+        <strong>Scalp Drops & Serums:</strong> Simple Daily Routine
+      </div>
+    </div>
+  </div>
 
   <!-- Header -->
   <header class="header-gallery">
@@ -22,29 +43,26 @@
       </button>
 
       <div class="brand-logo">
-        <a href="index.html">Élixir Dermatologie</a>
-        <span>Treatments Collection</span>
+        <a href="index.html">Élixir Trends</a>
       </div>
 
       <nav class="nav-links-desktop">
         <a href="index.html">Home</a>
-        <a href="treatments.html" class="active">Treatments</a>
-        <a href="results.html">Results</a>
-        <a href="specialists.html">Specialists</a>
-        <a href="trends.html">Journal</a>
+        <a href="haircare.html">Hair Care</a>
+        <a href="trends.html">Trends</a>
+        <a href="ingredients.html">Actives</a>
+        <a href="insights.html">Insights</a>
         <a href="contact.html">Contact</a>
       </nav>
-
-      <a href="contact.html" class="header-cta">Book Consultation</a>
     </div>
   </header>
 
-  <!-- Navigation Overlay -->
+  <!-- Overlay -->
   <div class="gallery-overlay" id="menuOverlay">
     <div class="container">
       <div class="overlay-header">
         <div class="brand-logo" style="text-align: left;">
-          <a href="index.html" style="color: #fff; font-family: var(--font-script);">Élixir Dermatologie</a>
+          <a href="index.html" style="color: #fff; font-family: var(--font-script);">Élixir Trends</a>
         </div>
         <button class="close-trigger" aria-label="Close Menu">
           <span>Close</span> ✕
@@ -54,10 +72,10 @@
       <div class="overlay-body">
         <nav class="overlay-nav">
           <a href="index.html"><span class="num">01</span> Home</a>
-          <a href="treatments.html" class="active"><span class="num">02</span> Treatments</a>
-          <a href="results.html"><span class="num">03</span> Results</a>
-          <a href="specialists.html"><span class="num">04</span> Specialists</a>
-          <a href="trends.html"><span class="num">05</span> Journal</a>
+          <a href="haircare.html"><span class="num">02</span> Hair Care</a>
+          <a href="trends.html"><span class="num">03</span> Trends</a>
+          <a href="ingredients.html"><span class="num">04</span> Actives</a>
+          <a href="insights.html"><span class="num">05</span> Insights</a>
           <a href="contact.html"><span class="num">06</span> Contact</a>
         </nav>
       </div>
@@ -68,151 +86,89 @@
     <!-- Page Header -->
     <section class="section-padding-sm border-bottom">
       <div class="container" style="text-align: center; max-width: 800px;">
-        <span class="eyebrow">Clinical Dossier</span>
-        <h1>Treatment Collection & <span class="script">Skincare Archive</span></h1>
-        <p class="lead">A curated archive of medical dermatological procedures categorized by target skin layer, cellular mechanism, and recovery timeline.</p>
+        <span class="eyebrow">CARE METHODS & GUIDES</span>
+        <h1>Simple Hair & Skin <span class="script">Care Routines</span></h1>
+        <p class="lead">Clear guides explaining how to use scalp serums, hair growth oils, and moisture barrier creams for healthy skin and strong hair.</p>
       </div>
     </section>
 
-    <!-- Filterable Archive Grid -->
+    <!-- Archive Grid -->
     <section class="section-padding">
       <div class="container">
         <!-- Category Filter -->
         <div class="filter-bar">
-          <button class="filter-btn active" data-filter="all">All Treatments</button>
-          <button class="filter-btn" data-filter="laser">Laser & Phototherapy</button>
-          <button class="filter-btn" data-filter="injectables">Injectable Aesthetics</button>
-          <button class="filter-btn" data-filter="peels">Clinical Matrix Peels</button>
-          <button class="filter-btn" data-filter="regenerative">Regenerative Therapy</button>
+          <button class="filter-btn active" data-filter="all">All Routines</button>
+          <button class="filter-btn" data-filter="hair">Hair & Scalp</button>
+          <button class="filter-btn" data-filter="skin">Skin Moisture</button>
+          <button class="filter-btn" data-filter="glow">Natural Glow</button>
         </div>
 
         <!-- Treatment Grid -->
         <div class="gallery-grid">
           <!-- Card 1 -->
-          <div class="gallery-card" data-category="laser">
+          <div class="gallery-card" data-category="glow">
             <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=800&q=85" alt="Picosecond Laser Pigment Erasure">
-              <span class="card-category">Laser</span>
+              <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=800&q=85" alt="Gentle Spot & Glow Care">
+              <span class="card-category">Skin Glow</span>
             </div>
             <div class="card-content">
-              <div class="card-code">TRT-01</div>
-              <h3>Picosecond Melanin Erasure</h3>
-              <p>Ultra-short acoustic pressure waves break down stubborn epidermal pigment and melasma with zero thermal damage to surrounding tissue.</p>
+              <div class="card-code">ROUTINE-01</div>
+              <h3>Gentle Spot & Glow Care</h3>
+              <p>Gentle light energy paired with vitamin C serums to fade dark spots and give skin a bright, smooth finish.</p>
               <div class="card-footer">
-                <span>Downtime: 6–12 Hours</span>
-                <a href="treatment-detail.html" class="link-arrow">View Protocol →</a>
+                <span>Downtime: None</span>
+                <a href="treatment-detail.html" class="link-arrow">Details</a>
               </div>
             </div>
           </div>
 
           <!-- Card 2 -->
-          <div class="gallery-card" data-category="regenerative">
+          <div class="gallery-card" data-category="hair">
             <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=85" alt="Fractional Radiofrequency Micro-Needling">
-              <span class="card-category">Regenerative</span>
+              <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=85" alt="Scalp Drop Routine">
+              <span class="card-category">Hair Care</span>
             </div>
             <div class="card-content">
-              <div class="card-code">TRT-02</div>
-              <h3>Fractional RF Collagen Matrix</h3>
-              <p>Gold-plated micro-needles deliver controlled bipolar radiofrequency directly into the deep dermis to tighten laxity and smooth acne scarring.</p>
+              <div class="card-code">ROUTINE-02</div>
+              <h3>Scalp Drops & Thick Hair Routine</h3>
+              <p>Daily lightweight scalp drops with peptides that feed hair roots and help thin hair look fuller and bouncy.</p>
               <div class="card-footer">
-                <span>Downtime: 24–48 Hours</span>
-                <a href="treatment-detail.html" class="link-arrow">View Protocol →</a>
+                <span>Downtime: None</span>
+                <a href="haircare.html" class="link-arrow">Hair Care</a>
               </div>
             </div>
           </div>
 
           <!-- Card 3 -->
-          <div class="gallery-card" data-category="injectables">
+          <div class="gallery-card" data-category="skin">
             <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=85" alt="Polynucleotide Cellular Biostimulation">
-              <span class="card-category">Injectable</span>
+              <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=85" alt="Ceramide Moisture Barrier Care">
+              <span class="card-category">Skin Moisture</span>
             </div>
             <div class="card-content">
-              <div class="card-code">TRT-03</div>
-              <h3>Polynucleotide Biostimulation</h3>
-              <p>Salmon-derived DNA fragments injected intradermally to trigger fibroblast activation, hydration retention, and micro-vascular circulation.</p>
+              <div class="card-code">ROUTINE-03</div>
+              <h3>Ceramide Moisture Barrier Care</h3>
+              <p>Hydrating creams with natural skin lipids that lock in water and keep sensitive skin calm and soft all day.</p>
               <div class="card-footer">
-                <span>Downtime: 12 Hours</span>
-                <a href="ingredients.html" class="link-arrow">View Actives →</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 4 -->
-          <div class="gallery-card" data-category="peels">
-            <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=85" alt="Bio-Repeel TCA Resurfacing">
-              <span class="card-category">Peels</span>
-            </div>
-            <div class="card-content">
-              <div class="card-code">TRT-04</div>
-              <h3>Biphasic TCA Matrix Peel</h3>
-              <p>35% Trichloroacetic acid infused with amino acids and vitamins for deep epidermal exfoliation without visible shedding or social downtime.</p>
-              <div class="card-footer">
-                <span>Downtime: Zero</span>
-                <a href="treatment-detail.html" class="link-arrow">View Protocol →</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 5 -->
-          <div class="gallery-card" data-category="injectables">
-            <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=85" alt="Hyaluronic Structural Contouring">
-              <span class="card-category">Injectable</span>
-            </div>
-            <div class="card-content">
-              <div class="card-code">TRT-05</div>
-              <h3>High-Viscosity Dermal Sculpting</h3>
-              <p>Micro-cannula administration of cross-linked hyaluronic gels to restore deep facial support structures in the zygomatic and malar regions.</p>
-              <div class="card-footer">
-                <span>Downtime: Minimal</span>
-                <a href="treatment-detail.html" class="link-arrow">View Protocol →</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 6 -->
-          <div class="gallery-card" data-category="laser">
-            <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1519415943484-9fa1873496d4?auto=format&fit=crop&w=800&q=85" alt="Vascular Nd:YAG Laser">
-              <span class="card-category">Laser</span>
-            </div>
-            <div class="card-content">
-              <div class="card-code">TRT-06</div>
-              <h3>Vascular Nd:YAG Target Therapy</h3>
-              <p>1064nm long-pulse laser targeting dilated capillaries, rosacea redness, and spider veins with localized sapphire contact cooling.</p>
-              <div class="card-footer">
-                <span>Downtime: 24 Hours</span>
-                <a href="treatment-detail.html" class="link-arrow">View Protocol →</a>
+                <span>Downtime: None</span>
+                <a href="ingredients.html" class="link-arrow">Actives</a>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Consultation Banner -->
-    <section class="section-padding bg-secondary border-top">
-      <div class="container" style="text-align: center; max-width: 700px;">
-        <span class="eyebrow">Personalized Diagnosis</span>
-        <h2>Unsure which treatment fits your <span class="script">skin architecture</span>?</h2>
-        <p class="lead" style="margin-bottom: 30px;">Our medical team performs multispectral skin imaging during your initial consultation to determine your exact protocol.</p>
-        <a href="contact.html" class="btn-gallery btn-accent">Reserve Diagnostic Consultation</a>
       </div>
     </section>
   </div>
 
-  <!-- Minimal Footer with Newsletter & 3 Social Icons -->
+  <!-- Footer -->
   <footer class="footer-editorial">
     <div class="container">
       <div class="footer-newsletter-wrap">
         <div class="newsletter-info">
-          <h3>Stay updated with <span class="script" style="color: var(--accent);">skin intelligence</span>.</h3>
-          <p>Receive our monthly research dossier on picosecond laser physics, polynucleotides, and barrier care.</p>
+          <h3>Stay updated with <span class="script" style="color: var(--accent);">daily care tips</span>.</h3>
+          <p>Get our simple monthly email digest highlighting top trending hair oils, scalp serums, and clean cosmetics.</p>
         </div>
-        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Élixir Dermatologie Journal.'); this.reset();">
+        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Cosmetics & Hair Care Trend Monitor.'); this.reset();">
           <input type="email" class="newsletter-input" placeholder="Enter your email address..." required>
           <button type="submit" class="btn-gallery btn-accent" style="padding: 14px 28px;">Subscribe</button>
         </form>
@@ -220,16 +176,16 @@
 
       <div class="footer-minimal-nav">
         <div class="brand-logo" style="text-align: left;">
-          <a href="index.html" style="color: #fff; font-family: var(--font-script); font-size: 2rem;">Élixir Dermatologie</a>
+          <a href="index.html" style="color: #fff; font-family: var(--font-script); font-size: 2rem;">Élixir Trends</a>
+          <span style="display:block; font-size: 0.65rem; color: var(--accent); letter-spacing: 0.15em; text-transform: uppercase;">Cosmetics & Hair Care Trend Monitor</span>
         </div>
 
         <div class="footer-links-minimal">
-          <a href="index.html">Home</a>
-          <a href="treatments.html" class="active">Treatments</a>
-          <a href="results.html">Results Archive</a>
-          <a href="specialists.html">Specialists</a>
-          <a href="trends.html">Journal</a>
-          <a href="contact.html">Book Consultation</a>
+          <a href="haircare.html">Hair Care</a>
+          <a href="trends.html">Trends</a>
+          <a href="ingredients.html">Actives</a>
+          <a href="insights.html">Insights</a>
+          <a href="contact.html">Contact</a>
         </div>
 
         <div class="footer-social-icons">
@@ -246,11 +202,16 @@
       </div>
 
       <div class="footer-bottom">
-        <div>© <span data-year>2026</span> Élixir Dermatologie. All rights reserved.</div>
+        <div>© <span data-year>2026</span> Cosmetics & Hair Care Insights & Trend Monitor. All rights reserved.</div>
         <div>Paris • Geneva • New York</div>
       </div>
     </div>
-  </footer>
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
 
   <script src="js/main.js"></script>
 </body>

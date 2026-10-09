@@ -187,7 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Category Filtering
-  const filterBtns = document.querySelectorAll('.filter-btn');
+  const filterBtns = document.querySelectorAll('.filter-btn, .filter-chip');
   const galleryCards = document.querySelectorAll('.gallery-card[data-category]');
 
   if (filterBtns.length > 0 && galleryCards.length > 0) {
@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         galleryCards.forEach(card => {
           const cardCat = card.getAttribute('data-category');
-          if (category === 'all' || cardCat === category) {
+          if (category === 'all' || cardCat === category || (cardCat && cardCat.includes(category))) {
             card.style.display = 'flex';
             setTimeout(() => {
               card.style.opacity = '1';
@@ -217,4 +217,64 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+  // Real-time Trend Search
+  const trendSearch = document.getElementById('trendSearch');
+  if (trendSearch && galleryCards.length > 0) {
+    trendSearch.addEventListener('input', (e) => {
+      const term = e.target.value.toLowerCase().trim();
+      galleryCards.forEach(card => {
+        const text = card.textContent.toLowerCase();
+        if (text.includes(term)) {
+          card.style.display = 'flex';
+          card.style.opacity = '1';
+        } else {
+          card.style.display = 'none';
+          card.style.opacity = '0';
+        }
+      });
+    });
+  }
+
+  // Back to Top Button Functionality
+  const backToTopBtn = document.getElementById('backToTop');
+  if (backToTopBtn) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTopBtn.classList.add('is-visible');
+      } else {
+        backToTopBtn.classList.remove('is-visible');
+      }
+    });
+
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  }
+
+  // FAQ Accordion Toggle
+  const faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(item => {
+    const questionBtn = item.querySelector('.faq-question');
+    if (questionBtn) {
+      questionBtn.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        faqItems.forEach(otherItem => {
+          otherItem.classList.remove('active');
+          const otherBtn = otherItem.querySelector('.faq-question');
+          if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
+        });
+        if (!isActive) {
+          item.classList.add('active');
+          questionBtn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    }
+  });
 });
+
+
+
